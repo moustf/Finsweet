@@ -70,4 +70,4 @@ You can find the design specifically from ***[HERE](https://www.figma.com/commun
 - [Material UI](https://mui.com/material-ui/getting-started/overview/).
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html).
 - [react-use-form](https://react-hook-form.com/get-started/#Quickstart).
-- [react-query](https://tanstack.com/virtual/v3/docs/guide/introduction).
+- [react-query](https://tanstack.com/query/latest/docs/react/overview).

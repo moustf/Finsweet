@@ -7,6 +7,9 @@
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.4",
+    "@mui/system": "^5.11.4",
+    "@tanstack/react-query": "^4.22.0",
+    "@tanstack/react-query-devtools": "^4.22.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -34,7 +37,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint -c .eslint.json --ext .tsx, .ts ./src --no-error-on-unmatched-pattern",
+    "lint": "eslint -c .eslintrc.json --ext .tsx, .ts ./src --no-error-on-unmatched-pattern",
     "lint-fix": "npm run lint -- --fix",
     "prepare": "husky install"
   },
