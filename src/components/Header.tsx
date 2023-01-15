@@ -8,6 +8,7 @@ export const Header: FC = () => (
   <AppBar
     component="header"
     sx={{
+      position: 'static',
       width: '100%',
       height: {
         xs: '38vh', sm: '20vh', md: '10vh', lg: '5rem', xl: '5rem',
