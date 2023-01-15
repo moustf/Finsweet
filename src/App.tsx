@@ -5,7 +5,7 @@ import { ReactQueryDevtools } from '@tanstack//react-query-devtools';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import { theme } from './theme';
-import { LandingPage } from './pages/landingPage';
+import { LandingPage } from './pages/LandingPage';
 
 export const App: FC = () => {
   const queryClient = new QueryClient();
