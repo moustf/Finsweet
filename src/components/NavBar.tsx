@@ -19,14 +19,14 @@ export const NavBar: FC = () => (
       gap: {
         xs: '.5rem', sm: '3rem', md: '1rem', lg: '1.5rem', xl: '1.5rem',
       },
-      '& .MuiButtonBase-root': {
+      '& .header__nav-button': {
         textTransform: 'none',
         fontFamily: "'Sen', sans-serif",
       },
-      '& .MuiButtonBase-root.MuiButton-text': {
+      '& .header__nav-button-text': {
         color: 'secondary.contrastText',
       },
-      '& .MuiButtonBase-root.MuiButton-contained ': {
+      '& .header__nav-button-contained': {
         width: '11rem',
         height: '3.2rem',
         fontSize: {
@@ -40,19 +40,19 @@ export const NavBar: FC = () => (
       },
     }}
   >
-    <Button variant="text" href="#home">
+    <Button variant="text" href="#home" className="header__nav-button header__nav-button-text">
       <Typography variant="body1" component="p">Home</Typography>
     </Button>
-    <Button variant="text" href="#blog">
+    <Button variant="text" href="#blog" className="header__nav-button header__nav-button-text">
       <Typography variant="body1" component="p">Body</Typography>
     </Button>
-    <Button variant="text" href="#about">
+    <Button variant="text" href="#about" className="header__nav-button header__nav-button-text">
       <Typography variant="body1" component="p">About Us</Typography>
     </Button>
-    <Button variant="text" href="#contact">
+    <Button variant="text" href="#contact" className="header__nav-button header__nav-button-text">
       <Typography variant="body1" component="p">Contact Us</Typography>
     </Button>
-    <Button variant="contained" href="#footer">
+    <Button variant="contained" href="#footer" className="header__nav-button header__nav-button-contained">
       Subscribe
     </Button>
   </Box>
