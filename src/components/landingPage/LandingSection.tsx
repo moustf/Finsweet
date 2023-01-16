@@ -24,6 +24,7 @@ export const LandingSection: FC = () => (
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
+      mb: '8rem',
     }}
   >
     <Typography

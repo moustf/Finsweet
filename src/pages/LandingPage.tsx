@@ -3,6 +3,7 @@ import { Box, CssBaseline } from '@mui/material';
 
 import { Header } from '../components/Header';
 import { LandingSection } from '../components/landingPage/LandingSection';
+import { PostsSection } from '../components/landingPage/PostsSection';
 
 export const LandingPage: FC = () => (
   <Box
@@ -11,5 +12,6 @@ export const LandingPage: FC = () => (
     <CssBaseline />
     <Header />
     <LandingSection />
+    <PostsSection />
   </Box>
 );
