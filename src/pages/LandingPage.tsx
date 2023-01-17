@@ -5,6 +5,7 @@ import { Header } from '../components/Header';
 import { LandingSection } from '../components/landingPage/LandingSection';
 import { PostsSection } from '../components/landingPage/PostsSection';
 import { MottoSection } from '../components/landingPage/MottoSection';
+import { CategoriesSection } from '../components/landingPage/CategoriesSection';
 
 export const LandingPage: FC = () => (
   <Box
@@ -15,5 +16,6 @@ export const LandingPage: FC = () => (
     <LandingSection />
     <PostsSection />
     <MottoSection />
+    <CategoriesSection />
   </Box>
 );
