@@ -13,7 +13,7 @@ export const MottoSection: FC = () => (
       padding: {
         xs: '1rem', sm: '1rem', mb: '5rem', lg: '5rem', xl: '5rem',
       },
-      mb: '10rem',
+      mb: '12rem',
       transform: {
         xs: 'translateY(82rem)', sm: 'translateY(68rem)', md: 'translateY(55rem)', lg: 'translateY(-3rem)', xl: 'none',
       },
