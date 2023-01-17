@@ -8,7 +8,7 @@ export const MottoSection: FC = () => (
     sx={{
       width: '100%',
       height: {
-        xs: '100vh', sm: '100vh', md: '100vh', lg: '90vh', xl: '60vh',
+        xs: '100vh', sm: '100vh', md: '100vh', lg: '60vh', xl: '60vh',
       },
       padding: {
         xs: '1rem', sm: '1rem', mb: '5rem', lg: '5rem', xl: '5rem',
@@ -32,7 +32,7 @@ export const MottoSection: FC = () => (
       sx={{
         width: '100%',
         height: {
-          xs: '85vh', sm: '80vh', md: '90vh', lg: '92vh', xl: '60vh',
+          xs: '85vh', sm: '80vh', md: '90vh', lg: '60vh', xl: '60vh',
         },
         bgcolor: '#F4F0F8',
         pt: {
@@ -46,7 +46,7 @@ export const MottoSection: FC = () => (
           xs={12}
           sm={12}
           md={12}
-          lg={12}
+          lg={6}
           xl={6}
         >
           <Box
@@ -83,14 +83,14 @@ export const MottoSection: FC = () => (
               component="h2"
               sx={{
                 width: {
-                  xs: '100%', sm: '70%', md: '42rem', lg: '45rem', xl: '42rem',
+                  xs: '100%', sm: '70%', md: '42rem', lg: '30rem', xl: '42rem',
                 },
                 fontSize: {
-                  xs: '1rem', sm: '1.8rem', md: '1.5rem', lg: '2.8rem', xl: '2.8rem',
+                  xs: '1rem', sm: '1.8rem', md: '1.5rem', lg: '2rem', xl: '2.8rem',
                 },
                 fontWeight: 700,
                 lineHeight: {
-                  xs: '25px', sm: '45px', md: '55px', lg: '58px', xl: '55px',
+                  xs: '25px', sm: '45px', md: '55px', lg: '40px', xl: '55px',
                 },
                 mb: '1rem',
               }}
@@ -102,14 +102,14 @@ export const MottoSection: FC = () => (
               component="p"
               sx={{
                 width: {
-                  xs: '100%', sm: '70%', md: '15rem', lg: '35rem', xl: '35rem',
+                  xs: '100%', sm: '70%', md: '35rem', lg: '30rem', xl: '35rem',
                 },
                 color: '#6D6E76',
                 fontSize: {
-                  xs: '0.8rem', sm: '01rem', md: '1.2rem', lg: '1.3rem', xl: '1.2rem',
+                  xs: '0.8rem', sm: '01rem', md: '1.2rem', lg: '1rem', xl: '1.2rem',
                 },
                 lineHeight: {
-                  xs: '28px', sm: '28px', md: '28px', lg: '30px', xl: '28px',
+                  xs: '28px', sm: '28px', md: '28px', lg: '25px', xl: '28px',
                 },
                 mb: '1rem',
               }}
@@ -125,7 +125,7 @@ export const MottoSection: FC = () => (
                 color: '#592EA9',
                 fontWeight: 700,
                 fontSize: {
-                  xs: '0.9rem', sm: '1rem', md: '1.2rem', lg: '1.4rem', xl: '1.2rem',
+                  xs: '0.9rem', sm: '1rem', md: '1.2rem', lg: '1rem', xl: '1.2rem',
                 },
               }}
             >
@@ -138,7 +138,7 @@ export const MottoSection: FC = () => (
           xs={12}
           sm={12}
           md={12}
-          lg={12}
+          lg={6}
           xl={6}
         >
           <Box
@@ -148,7 +148,7 @@ export const MottoSection: FC = () => (
                 xs: '42vh', sm: '40vh', md: '45vh', lg: '45vh', xl: '60vh',
               },
               pl: {
-                xs: '1rem', sm: '2rem', md: '5rem', lg: '5rem', xl: '3rem',
+                xs: '1rem', sm: '2rem', md: '5rem', lg: '2rem', xl: '3rem',
               },
               display: 'flex',
               flexDirection: 'column',
@@ -178,14 +178,14 @@ export const MottoSection: FC = () => (
               component="h3"
               sx={{
                 width: {
-                  xs: '100%', sm: '70%', md: '38rem', lg: '45rem', xl: '38rem',
+                  xs: '100%', sm: '70%', md: '38rem', lg: '30rem', xl: '38rem',
                 },
                 fontSize: {
-                  xs: '1rem', sm: '1.6rem', md: '1.2rem', lg: '2.8rem', xl: '2.5rem',
+                  xs: '1rem', sm: '1.6rem', md: '1.5rem', lg: '2rem', xl: '2.5rem',
                 },
                 fontWeight: 700,
                 lineHeight: {
-                  xs: '25px', sm: '45px', md: '48px', lg: '58px', xl: '48px',
+                  xs: '25px', sm: '45px', md: '48px', lg: '40px', xl: '48px',
                 },
                 mb: '1rem',
               }}
@@ -197,14 +197,14 @@ export const MottoSection: FC = () => (
               component="p"
               sx={{
                 width: {
-                  xs: '100%', sm: '70%', md: '15rem', lg: '35rem', xl: '40rem',
+                  xs: '100%', sm: '70%', md: '35rem', lg: '28rem', xl: '40rem',
                 },
                 color: '#6D6E76',
                 lineHeight: {
                   xs: '28px', sm: '28px', md: '28px', lg: '30px', xl: '28px',
                 },
                 fontSize: {
-                  xs: '0.8rem', sm: '01rem', md: '1.2rem', lg: '1.3rem', xl: '1.2rem',
+                  xs: '0.8rem', sm: '01rem', md: '1.2rem', lg: '1rem', xl: '1.2rem',
                 },
                 mb: '1rem',
               }}
