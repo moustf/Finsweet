@@ -31,7 +31,6 @@ export const ListOfAuthorsSection: FC = () => {
           lg: 'translateY(-5rem)',
           xl: 'translateY(10rem)',
         },
-        mb: '18rem',
       }}
     >
       <Typography

@@ -8,6 +8,7 @@ import { MottoSection } from '../components/landingPage/MottoSection';
 import { CategoriesSection } from '../components/landingPage/CategoriesSection';
 import { OurStoriesSection } from '../components/landingPage/OurStoriesSection';
 import { ListOfAuthorsSection } from '../components/landingPage/ListOfAuthorsSection';
+import { FeaturedInSection } from '../components/landingPage/FeaturedInSection';
 
 export const LandingPage: FC = () => (
   <Box
@@ -21,5 +22,6 @@ export const LandingPage: FC = () => (
     <CategoriesSection />
     <OurStoriesSection />
     <ListOfAuthorsSection />
+    <FeaturedInSection />
   </Box>
 );
