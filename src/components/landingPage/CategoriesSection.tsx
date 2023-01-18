@@ -21,6 +21,7 @@ export const CategoriesSection: FC = () => {
         transform: {
           xs: 'translateY(108rem)', sm: 'translateY(62rem)', md: 'translateY(58rem)', lg: 'translateY(5rem)', xl: 'translateY(5rem)',
         },
+        mb: '8rem',
       }}
     >
       <Typography
