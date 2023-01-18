@@ -20,6 +20,7 @@ export const OurStoriesSection: FC = () => (
         lg: 'none',
         xl: 'none',
       },
+      mb: '8rem',
     }}
   >
     <Grid
