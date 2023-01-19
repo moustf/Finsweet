@@ -15,7 +15,7 @@ export const MottoSection: FC = () => (
       },
       mb: '12rem',
       transform: {
-        xs: 'translateY(82rem)', sm: 'translateY(68rem)', md: 'translateY(55rem)', lg: 'translateY(-3rem)', xl: 'none',
+        xs: 'translateY(78rem)', sm: 'translateY(70rem)', md: 'translateY(61rem)', lg: 'translateY(3rem)', xl: 'none',
       },
     }}
   >

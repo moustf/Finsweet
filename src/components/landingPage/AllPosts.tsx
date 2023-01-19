@@ -10,7 +10,7 @@ export const AllPosts: FC = () => (
       xs: '0 1rem', sm: '0 1rem', md: '0 2rem', lg: '0 2rem', xl: '0 2rem',
     },
     transform: {
-      xs: 'translateY(8rem)', sm: 'translateY(23rem)', md: 'none', lg: 'none', xl: 'none',
+      xs: 'translateY(2rem)', sm: 'translateY(20rem)', md: 'translateY(5rem)', lg: 'none', xl: 'none',
     },
   }}
   >

@@ -5,12 +5,12 @@ import { Header } from '../components/Header';
 import { LandingSection } from '../components/landingPage/LandingSection';
 import { PostsSection } from '../components/landingPage/PostsSection';
 import { MottoSection } from '../components/landingPage/MottoSection';
-import { CategoriesSection } from '../components/landingPage/CategoriesSection';
+import { CategoriesSection } from '../components/CategoriesSection';
 import { OurStoriesSection } from '../components/landingPage/OurStoriesSection';
-import { ListOfAuthorsSection } from '../components/landingPage/ListOfAuthorsSection';
+import { ListOfAuthorsSection } from '../components/ListOfAuthorsSection';
 import { FeaturedInSection } from '../components/landingPage/FeaturedInSection';
 import { TestimonialsSection } from '../components/landingPage/TestimonialsSection';
-import { JoinOurTeamSection } from '../components/landingPage/JoinOurTeamSection';
+import { JoinOurTeamSection } from '../components/JoinOurTeamSection';
 import { Footer } from '../components/Footer';
 
 export const LandingPage: FC = () => (
