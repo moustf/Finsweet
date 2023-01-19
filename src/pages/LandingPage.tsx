@@ -11,6 +11,7 @@ import { ListOfAuthorsSection } from '../components/landingPage/ListOfAuthorsSec
 import { FeaturedInSection } from '../components/landingPage/FeaturedInSection';
 import { TestimonialsSection } from '../components/landingPage/TestimonialsSection';
 import { JoinOurTeamSection } from '../components/landingPage/JoinOurTeamSection';
+import { Footer } from '../components/Footer';
 
 export const LandingPage: FC = () => (
   <Box
@@ -27,5 +28,6 @@ export const LandingPage: FC = () => (
     <FeaturedInSection />
     <TestimonialsSection />
     <JoinOurTeamSection />
+    <Footer />
   </Box>
 );
