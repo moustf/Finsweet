@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import { theme } from './theme';
 import { LandingPage } from './pages/LandingPage';
+import { AllPostsPage } from './pages/allPostsPage';
 
 export const App: FC = () => {
   const queryClient = new QueryClient();
@@ -14,6 +15,10 @@ export const App: FC = () => {
     {
       path: '/',
       element: <LandingPage />,
+    },
+    {
+      path: '/all-posts',
+      element: <AllPostsPage />,
     },
   ]);
 
