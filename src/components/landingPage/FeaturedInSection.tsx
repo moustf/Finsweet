@@ -25,10 +25,10 @@ export const FeaturedInSection: FC = () => (
       flexWrap: 'wrap',
       gap: '2rem',
       transform: {
-        xs: 'translateY(208rem)',
-        sm: 'translateY(165rem)',
-        md: 'translateY(115rem)',
-        lg: 'translateY(32rem)',
+        xs: 'translateY(225rem)',
+        sm: 'translateY(174rem)',
+        md: 'translateY(135rem)',
+        lg: 'translateY(35rem)',
         xl: 'translateY(18rem)',
       },
       '& .featured-logo': {

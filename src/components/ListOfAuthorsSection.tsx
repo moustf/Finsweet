@@ -7,10 +7,10 @@ import {
   LinkedIn as LinkedInIcon,
 } from '@mui/icons-material';
 
-import Author1 from '../../assets/author1.svg';
-import Author2 from '../../assets/author2.svg';
-import Author3 from '../../assets/author3.svg';
-import Author4 from '../../assets/author4.svg';
+import Author1 from '../assets/author1.svg';
+import Author2 from '../assets/author2.svg';
+import Author3 from '../assets/author3.svg';
+import Author4 from '../assets/author4.svg';
 
 export const ListOfAuthorsSection: FC = () => {
   const [index, setIndex] = useState(1);
@@ -25,10 +25,10 @@ export const ListOfAuthorsSection: FC = () => {
         flexDirection: 'column',
         alignItems: 'center',
         transform: {
-          xs: 'translateY(125rem)',
-          sm: 'translateY(80rem)',
-          md: 'translateY(78rem)',
-          lg: 'translateY(-5rem)',
+          xs: 'translateY(140rem)',
+          sm: 'translateY(89rem)',
+          md: 'translateY(95rem)',
+          lg: 'translateY(-2rem)',
           xl: 'translateY(10rem)',
         },
       }}
