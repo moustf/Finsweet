@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { theme } from './theme';
 import { LandingPage } from './pages/LandingPage';
 import { AllPostsPage } from './pages/allPostsPage';
+import { SinglePostPage } from './pages/singlePostPage';
 
 export const App: FC = () => {
   const queryClient = new QueryClient();
@@ -19,6 +20,10 @@ export const App: FC = () => {
     {
       path: '/all-posts',
       element: <AllPostsPage />,
+    },
+    {
+      path: '/post',
+      element: <SinglePostPage />,
     },
   ]);
 

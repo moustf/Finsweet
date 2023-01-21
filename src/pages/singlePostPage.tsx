@@ -1,5 +1,12 @@
+import { Box } from '@mui/material';
 import { FC } from 'react';
 
-export const dummy: FC = () => (
-  <div />
+import { Header } from '../components/Header';
+import { InfoAndTitleSection } from '../components/singlePostPage/InfoAndTitleSection';
+
+export const SinglePostPage: FC = () => (
+  <Box component="main">
+    <Header />
+    <InfoAndTitleSection />
+  </Box>
 );
