@@ -172,5 +172,16 @@ export const MorePostsSection: FC = () => (
         </Grid>
       </Grid>
     </Box>
+    <Divider
+      flexItem
+      sx={{
+        width: '100%',
+        height: '1px',
+        bgcolor: '#6D6E76',
+        borderRadius: '3px',
+        opacity: 0.3,
+        mt: '4rem',
+      }}
+    />
   </Box>
 );
