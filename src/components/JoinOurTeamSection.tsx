@@ -14,9 +14,21 @@ export const JoinOurTeamSection: FC<{ page: string }> = ({ page }) => (
       gap: '2rem',
       textAlign: 'center',
       transform: {
-        xs: page === 'all-posts' ? 'translateY(74rem)' : 'translateY(225rem)',
-        sm: page === 'all-posts' ? 'translateY(28rem)' : 'translateY(165rem)',
-        md: page === 'all-posts' ? 'translateY(22rem)' : 'translateY(133rem)',
+        xs: page === 'all-posts'
+          ? 'translateY(74rem)'
+          : page === 'single-post'
+            ? 'translateY(3rem)'
+            : 'translateY(225rem)',
+        sm: page === 'all-posts'
+          ? 'translateY(28rem)'
+          : page === 'single-post'
+            ? 'translateY(0rem)'
+            : 'translateY(165rem)',
+        md: page === 'all-posts'
+          ? 'translateY(22rem)'
+          : page === 'single-post'
+            ? 'translateY(2rem)'
+            : 'translateY(133rem)',
         lg: 'translateY(8rem)',
         xl: 'translateY(3rem)',
       },
