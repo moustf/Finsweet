@@ -6,7 +6,7 @@ import CyborgIcon from '../assets/cyborg.png';
 import EconomyIcon from '../assets/economy.png';
 import RocketIcon from '../assets/rocket.png';
 
-export const CategoriesSection: FC = () => {
+export const CategoriesSection: FC<{ page: string }> = ({ page }) => {
   const [index, setIndex] = useState<number>(1);
 
   return (
@@ -19,7 +19,11 @@ export const CategoriesSection: FC = () => {
         justifyContent: 'center',
         alignItems: 'center',
         transform: {
-          xs: 'translateY(105rem)', sm: 'translateY(72rem)', md: 'translateY(67rem)', lg: 'translateY(10rem)', xl: 'translateY(5rem)',
+          xs: page === 'all-posts' ? 'translateY(40rem)' : 'translateY(105rem)',
+          sm: page === 'all-posts' ? 'translateY(18rem)' : 'translateY(72rem)',
+          md: page === 'all-posts' ? 'translateY(15rem)' : 'translateY(67rem)',
+          lg: 'translateY(10rem)',
+          xl: 'translateY(5rem)',
         },
         mb: '8rem',
       }}
@@ -39,7 +43,9 @@ export const CategoriesSection: FC = () => {
       <Box
         sx={{
           width: '100%',
-          p: '5rem',
+          p: {
+            xs: '2rem', sm: '2rem', md: '2rem', lg: '5rem', xl: '5rem',
+          },
         }}
       >
         <Grid
