@@ -5,7 +5,7 @@ import Logo from '../assets/Logo.png';
 import { Subscription } from './Subscription';
 import { FooterSocial } from './FooterSocial';
 
-export const Footer: FC = () => (
+export const Footer: FC<{ page: string }> = ({ page }) => (
   <Box
     sx={{
       width: '100%',
@@ -19,11 +19,11 @@ export const Footer: FC = () => (
       justifyContent: 'space-between',
       alignItems: 'center',
       transform: {
-        xs: 'translateY(228rem)',
-        sm: 'translateY(166rem)',
-        md: 'translateY(135rem)',
+        xs: page === 'all-posts' ? 'translateY(78rem)' : 'translateY(228rem)',
+        sm: page === 'all-posts' ? 'translateY(32rem)' : 'translateY(166rem)',
+        md: page === 'all-posts' ? 'translateY(25rem)' : 'translateY(135rem)',
         lg: 'translateY(8rem)',
-        xl: 'translateY(0rem)',
+        xl: 'translateY(5rem)',
       },
     }}
   >

@@ -46,7 +46,7 @@ export const FooterSocial: FC = () => (
         },
         '& .author-socials': {
           width: {
-            xs: '1.2rem', sm: '1.2rem', md: '1.5rem', lg: '1.5rem', xl: '1.5rem',
+            xs: '1rem', sm: '1.2rem', md: '1.5rem', lg: '1.5rem', xl: '1.5rem',
           },
           height: '1.6rem',
           color: '#6D6E76',

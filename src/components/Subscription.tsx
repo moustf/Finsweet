@@ -37,7 +37,7 @@ export const Subscription: FC = () => {
         component="h2"
         sx={{
           width: {
-            xs: '30rem', sm: '30rem', md: '45rem', lg: '45rem', xl: '45rem',
+            xs: '20rem', sm: '30rem', md: '45rem', lg: '45rem', xl: '45rem',
           },
           fontFamily: "'Sen', sans-serif",
           fontWeight: 700,

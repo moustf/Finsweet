@@ -1,7 +1,7 @@
 import { Box, Button, Typography } from '@mui/material';
 import { FC } from 'react';
 
-export const JoinOurTeamSection: FC = () => (
+export const JoinOurTeamSection: FC<{ page: string }> = ({ page }) => (
   <Box
     sx={{
       width: '100%',
@@ -14,7 +14,11 @@ export const JoinOurTeamSection: FC = () => (
       gap: '2rem',
       textAlign: 'center',
       transform: {
-        xs: 'translateY(225rem)', sm: 'translateY(165rem)', md: 'translateY(133rem)', lg: 'translateY(8rem)', xl: 'translateY(0)',
+        xs: page === 'all-posts' ? 'translateY(74rem)' : 'translateY(225rem)',
+        sm: page === 'all-posts' ? 'translateY(28rem)' : 'translateY(165rem)',
+        md: page === 'all-posts' ? 'translateY(22rem)' : 'translateY(133rem)',
+        lg: 'translateY(8rem)',
+        xl: 'translateY(3rem)',
       },
     }}
   >
@@ -22,7 +26,9 @@ export const JoinOurTeamSection: FC = () => (
       variant="h2"
       component="h2"
       sx={{
-        width: '25.8rem',
+        width: {
+          xs: '100%', sm: '100%', md: '100%', lg: '25.8rem', xl: '25.8rem',
+        },
         fontFamily: "'Sen', sans-serif",
         fontWeight: 700,
         fontSize: '2.25rem',
