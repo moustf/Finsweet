@@ -10,7 +10,7 @@ export const InfoAndTitleSection: FC = () => (
     sx={{
       width: '100%',
       height: {
-        xs: '70vh', sm: '70vh', md: '60vh', lg: '45vh', xl: '45vh',
+        xs: '70vh', sm: '50vh', md: '60vh', lg: '45vh', xl: '45vh',
       },
       p: {
         xs: '0 2rem', sm: '0 2rem', md: '0 2rem', lg: 0, xl: 0,
