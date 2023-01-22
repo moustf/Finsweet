@@ -1,4 +1,6 @@
-import { FC, Dispatch, SetStateAction } from 'react';
+import {
+  memo, FC, Dispatch, SetStateAction,
+} from 'react';
 import { Box, Typography } from '@mui/material';
 import {
   Facebook as FacebookIcon,
@@ -13,7 +15,7 @@ export const AuthorBox: FC<{
   setIndex: Dispatch<SetStateAction<number>>,
   img: string,
   name: string,
-}> = ({
+}> = memo(({
   index,
   arrange,
   setIndex,
@@ -37,15 +39,16 @@ export const AuthorBox: FC<{
   >
     <img src={img} alt="author one" className="author author1" />
     <Typography
-      variant="h1"
+      variant="h3"
       component="h3"
       sx={{
-        width: '10rem',
+        width: '12rem',
         fontFamily: "'Sen', sans-serif",
         fontWight: 700,
-        fontSize: '1.75rem',
+        fontSize: '1.6rem',
         letterSpacing: '-1px',
         textAlign: 'center',
+        color: 'secondary.main',
       }}
     >
       {name}
@@ -84,4 +87,4 @@ export const AuthorBox: FC<{
       <LinkedInIcon className="author-socials" />
     </Box>
   </Box>
-);
+));
