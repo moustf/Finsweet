@@ -18,19 +18,25 @@ export const JoinOurTeamSection: FC<{ page: string }> = ({ page }) => (
           ? 'translateY(74rem)'
           : page === 'single-post'
             ? 'translateY(3rem)'
-            : 'translateY(225rem)',
+            : page === 'about'
+              ? 'translateY(183rem)'
+              : 'translateY(225rem)',
         sm: page === 'all-posts'
           ? 'translateY(28rem)'
           : page === 'single-post'
             ? 'translateY(0rem)'
-            : 'translateY(165rem)',
+            : page === 'about'
+              ? 'translateY(178rem)'
+              : 'translateY(165rem)',
         md: page === 'all-posts'
           ? 'translateY(22rem)'
           : page === 'single-post'
             ? 'translateY(2rem)'
-            : 'translateY(133rem)',
-        lg: 'translateY(8rem)',
-        xl: 'translateY(3rem)',
+            : page === 'about'
+              ? 'translateY(90rem)'
+              : 'translateY(133rem)',
+        lg: page === 'about' ? 'translateY(72rem)' : 'translateY(8rem)',
+        xl: page === 'about' ? 'translateY(42rem)' : 'translateY(3rem)',
       },
     }}
   >
