@@ -25,21 +25,27 @@ export const Footer: FC<{ page: string }> = ({ page }) => (
             ? 'translateY(5rem)'
             : page === 'about'
               ? 'translateY(188rem)'
-              : 'translateY(228rem)',
+              : page === 'category'
+                ? 'translateY(5rem)'
+                : 'translateY(228rem)',
         sm: page === 'all-posts'
           ? 'translateY(32rem)'
           : page === 'single-post'
             ? 'translateY(2rem)'
             : page === 'about'
               ? 'translateY(180rem)'
-              : 'translateY(166rem)',
+              : page === 'category'
+                ? 'translateY(8rem)'
+                : 'translateY(166rem)',
         md: page === 'all-posts'
           ? 'translateY(25rem)'
           : page === 'single-post'
             ? 'translateY(3rem)'
             : page === 'about'
               ? 'translateY(93rem)'
-              : 'translateY(135rem)',
+              : page === 'category'
+                ? 'translateY(10rem)'
+                : 'translateY(135rem)',
         lg: page === 'about' ? 'translateY(75rem)' : 'translateY(8rem)',
         xl: page === 'about' ? 'translateY(45rem)' : 'translateY(5rem)',
       },
