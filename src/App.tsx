@@ -8,6 +8,7 @@ import { theme } from './theme';
 import { LandingPage } from './pages/LandingPage';
 import { AllPostsPage } from './pages/allPostsPage';
 import { SinglePostPage } from './pages/singlePostPage';
+import { BlogPage } from './pages/BlogPage';
 
 export const App: FC = () => {
   const queryClient = new QueryClient();
@@ -24,6 +25,10 @@ export const App: FC = () => {
     {
       path: '/post',
       element: <SinglePostPage />,
+    },
+    {
+      path: '/blog',
+      element: <BlogPage />,
     },
   ]);
 
