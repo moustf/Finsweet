@@ -6,8 +6,9 @@ export const PostCard: FC<{
   title: string,
   heading: string,
   text: string,
+  page: string,
 }> = ({
-  img, title, heading, text,
+  img, title, heading, text, page,
 }) => (
   <Box
     sx={{
@@ -49,8 +50,8 @@ export const PostCard: FC<{
           sx={{
             width: '100%',
             height: '100%',
-            pl: {
-              xs: 0, sm: 0, md: 0, lg: '2rem', xl: '1.5rem',
+            p: {
+              xs: 0, sm: 0, md: 0, lg: '2rem 0 2rem 2rem', xl: '2rem 0 2rem 1.5rem',
             },
             display: 'flex',
             flexDirection: 'column',
@@ -80,14 +81,22 @@ export const PostCard: FC<{
             variant="h1"
             component="h1"
             sx={{
-              width: {
-                xs: '100%', sm: '100%', md: '75%', lg: '75%', xl: '75%',
-              },
+              width: page === 'blog'
+                ? {
+                  xs: '100%', sm: '100%', md: '75%', lg: '75%', xl: '75%',
+                }
+                : {
+                  xs: '100%', sm: '100%', md: '75%', lg: '80%', xl: '80%',
+                },
               fontWeight: 700,
               color: 'secondary.main',
-              fontSize: {
-                xs: '1.2rem', sm: '1.3rem', md: '2rem', lg: '2rem', xl: '3rem',
-              },
+              fontSize: page === 'blog'
+                ? {
+                  xs: '1.2rem', sm: '1.3rem', md: '2rem', lg: '2rem', xl: '3rem',
+                }
+                : {
+                  xs: '1.2rem', sm: '1.3rem', md: '2rem', lg: '2.3rem', xl: '2.3rem',
+                },
               fontFamily: "'Sen', sans-serif",
               mb: {
                 xs: '0.7rem', sm: '0.7rem', md: '0.9rem', lg: '2rem', xl: '2rem',
@@ -100,14 +109,24 @@ export const PostCard: FC<{
             variant="body1"
             component="p"
             sx={{
-              width: {
-                xs: '100%', sm: '100%', md: '60%', lg: '60%', xl: '80%',
-              },
+              width: page === 'blog'
+                ? {
+                  xs: '100%', sm: '100%', md: '60%', lg: '60%', xl: '80%',
+                }
+                : {
+                  xs: '100%', sm: '100%', md: '60%', lg: '60%', xl: '80%',
+                },
               color: '#6D6E76',
-              fontSize: {
-                xs: '0.9rem', sm: '0.9rem', md: '1rem', lg: '1.2rem', xl: '1.2rem',
+              fontSize: page === 'blog'
+                ? {
+                  xs: '0.9rem', sm: '0.9rem', md: '1rem', lg: '1.2rem', xl: '1.2rem',
+                }
+                : {
+                  xs: '0.9rem', sm: '0.9rem', md: '1rem', lg: '1rem', xl: '1rem',
+                },
+              letterSpacing: {
+                xs: 0, sm: 0, md: '1px', lg: '2px', xl: '2px',
               },
-              letterSpacing: '2px',
             }}
           >
             {text}

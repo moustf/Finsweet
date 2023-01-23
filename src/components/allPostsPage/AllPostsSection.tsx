@@ -9,7 +9,7 @@ import Post1 from '../../assets/post1.svg';
 import Post2 from '../../assets/post2.svg';
 import Post3 from '../../assets/post3.svg';
 import Post4 from '../../assets/post4.svg';
-import { PostCard } from './PostCard';
+import { PostCard } from '../PostCard';
 
 const cards = [
   {
@@ -76,6 +76,7 @@ export const AllPostsSection: FC = () => (
         img, title, heading, text,
       }) => (
         <PostCard
+          page="blog"
           key={uuid()}
           img={img}
           title={title}
