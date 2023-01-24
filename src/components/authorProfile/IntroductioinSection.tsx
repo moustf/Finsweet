@@ -15,7 +15,7 @@ export const IntroductionSection: FC = () => (
     sx={{
       width: '100%',
       height: {
-        xs: '85vh', sm: '80vh', md: '50vh', lg: '60vh', xl: '60vh',
+        xs: '95vh', sm: '75vh', md: '60vh', lg: '70vh', xl: '60vh',
       },
       p: {
         xs: '2rem', sm: '2rem', md: '2rem', lg: 0, xl: 0,
@@ -25,6 +25,7 @@ export const IntroductionSection: FC = () => (
       alignItems: 'center',
       position: 'relative',
       bgcolor: '#F4F0F8',
+      mb: '5rem',
     }}
   >
     <Box
@@ -122,5 +123,22 @@ export const IntroductionSection: FC = () => (
         </Box>
       </Box>
     </Box>
+    <Box
+      component="div"
+      sx={{
+        width: {
+          xs: '20rem', sm: '40rem', md: '60rem', lg: '80rem', xl: '100rem',
+        },
+        height: {
+          xs: '1rem', sm: '1rem', md: '1rem', lg: '1.5rem', xl: '1.5rem',
+        },
+        background: 'linear-gradient(90deg,  transparent 0%, transparent 25%, #FFD050 25%, #FFD050 75%, #592EA9 75%,  #592EA9 100%)',
+        position: 'absolute',
+        bottom: 0,
+        left: {
+          xs: 0, sm: 0, md: '-7rem', lg: '-8rem', xl: 0,
+        },
+      }}
+    />
   </Box>
 );
