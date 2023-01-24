@@ -27,7 +27,9 @@ export const Footer: FC<{ page: string }> = ({ page }) => (
               ? 'translateY(188rem)'
               : page === 'category'
                 ? 'translateY(5rem)'
-                : 'translateY(228rem)',
+                : page === 'author'
+                  ? 'none'
+                  : 'translateY(228rem)',
         sm: page === 'all-posts'
           ? 'translateY(32rem)'
           : page === 'single-post'
@@ -36,7 +38,9 @@ export const Footer: FC<{ page: string }> = ({ page }) => (
               ? 'translateY(180rem)'
               : page === 'category'
                 ? 'translateY(8rem)'
-                : 'translateY(166rem)',
+                : page === 'author'
+                  ? 'none'
+                  : 'translateY(166rem)',
         md: page === 'all-posts'
           ? 'translateY(25rem)'
           : page === 'single-post'
@@ -45,7 +49,9 @@ export const Footer: FC<{ page: string }> = ({ page }) => (
               ? 'translateY(93rem)'
               : page === 'category'
                 ? 'translateY(10rem)'
-                : 'translateY(135rem)',
+                : page === 'author'
+                  ? 'none'
+                  : 'translateY(135rem)',
         lg: page === 'about' ? 'translateY(75rem)' : 'translateY(8rem)',
         xl: page === 'about' ? 'translateY(45rem)' : 'translateY(5rem)',
       },
