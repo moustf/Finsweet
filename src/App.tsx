@@ -8,6 +8,7 @@ import { theme } from './theme';
 import { LandingPage } from './pages/LandingPage';
 import { AllPostsPage } from './pages/allPostsPage';
 import { SinglePostPage } from './pages/singlePostPage';
+import { AboutPage } from './pages/AboutUsPage';
 import { CategoryPage } from './pages/CategoryPage';
 import { AuthorPage } from './pages/AuthorPage';
 
@@ -26,6 +27,10 @@ export const App: FC = () => {
     {
       path: '/post',
       element: <SinglePostPage />,
+    },
+    {
+      path: '/about',
+      element: <AboutPage />,
     },
     {
       path: '/category',
