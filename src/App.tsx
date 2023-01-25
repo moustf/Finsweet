@@ -11,6 +11,7 @@ import { SinglePostPage } from './pages/singlePostPage';
 import { AboutPage } from './pages/AboutUsPage';
 import { CategoryPage } from './pages/CategoryPage';
 import { AuthorPage } from './pages/AuthorPage';
+import { ContactUsPage } from './pages/ContactUsPage';
 
 export const App: FC = () => {
   const queryClient = new QueryClient();
@@ -39,6 +40,10 @@ export const App: FC = () => {
     {
       path: '/author',
       element: <AuthorPage />,
+    },
+    {
+      path: '/contact',
+      element: <ContactUsPage />,
     },
   ]);
 
