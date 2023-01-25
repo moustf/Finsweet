@@ -25,7 +25,6 @@ export const IntroductionSection: FC = () => (
       alignItems: 'center',
       position: 'relative',
       bgcolor: '#F4F0F8',
-      mb: '5rem',
     }}
   >
     <Box
