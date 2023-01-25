@@ -7,7 +7,7 @@ import { PostsSection } from '../components/landingPage/PostsSection';
 import { MottoSection } from '../components/landingPage/MottoSection';
 import { CategoriesSection } from '../components/CategoriesSection';
 import { OurStoriesSection } from '../components/landingPage/OurStoriesSection';
-import { ListOfAuthorsSection } from '../components/ListOfAuthorsSection';
+import { ListOfAuthorsSection } from '../components/landingPage/ListOfAuthorsSection';
 import { FeaturedInSection } from '../components/landingPage/FeaturedInSection';
 import { TestimonialsSection } from '../components/landingPage/TestimonialsSection';
 import { JoinOurTeamSection } from '../components/JoinOurTeamSection';
