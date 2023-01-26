@@ -47,7 +47,9 @@ export const ContractsForm: FC = () => {
       component="section"
       sx={{
         width: '100%',
-        height: '80vh',
+        height: {
+          xs: '70vh', sm: '60vh', md: '70vh', lg: '70vh', xl: '80vh',
+        },
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'flex-start',
@@ -61,7 +63,7 @@ export const ContractsForm: FC = () => {
         component="section"
         sx={{
           width: {
-            xs: '100%', sm: '100%', md: '50rem', lg: '60rem', xl: '60rem',
+            xs: '100%', sm: '100%', md: '50rem', lg: '70rem', xl: '70rem',
           },
           height: '90%',
           display: 'flex',
@@ -70,7 +72,34 @@ export const ContractsForm: FC = () => {
           },
           alignItems: 'flex-start',
           flexWrap: 'wrap',
-          p: '3rem 4rem',
+          p: {
+            xs: '2rem 1rem', sm: '2rem 2rem', md: '3rem 2rem', lg: '3rem 4rem', xl: '3rem 4rem',
+          },
+          '& .MuiFormLabel-root.Mui-focused': {
+            color: 'secondary.main',
+          },
+          '& .MuiInputBase-root.select.Mui-focused fieldset': {
+            borderColor: 'secondary.main',
+            '& legend span': {
+              color: 'secondary.main',
+              opacity: 1,
+              transform: 'translateY(-6px)',
+            },
+          },
+          '& .MuiOutlinedInput-root': {
+            '&:hover fieldset': {
+              borderColor: 'secondary.main',
+            },
+            '& .Mui-focused fieldset': {
+              borderColor: 'secondary.main',
+            },
+          },
+          '& .message-box': {
+            border: '1px solid rgba(109, 110, 118, 0.45)',
+            '&:focus': {
+              border: '1px solid black !important',
+            },
+          },
         }}
       >
         <Container
@@ -114,6 +143,7 @@ export const ContractsForm: FC = () => {
                 value={value || 'query1'}
                 label="Query Selection"
                 placeholder="Please select a query ..."
+                className="select"
               >
                 <MenuItem value="query1">First Query</MenuItem>
                 <MenuItem value="query2">Second Query</MenuItem>
@@ -138,6 +168,7 @@ export const ContractsForm: FC = () => {
                 onBlur={onBlur}
                 name={name}
                 value={value}
+                className="message-box"
                 style={{
                   padding: '2rem',
                   width: '100%',
@@ -150,7 +181,21 @@ export const ContractsForm: FC = () => {
               />
             )}
           />
-          <Button type="submit" variant="contained" fullWidth>Send Message</Button>
+          <Button
+            type="submit"
+            variant="contained"
+            fullWidth
+            sx={{
+              width: '100%',
+              height: '4rem',
+              boxShadow: 'none',
+              fontFamily: "'Sen', sans-serif",
+              fontWeight: 700,
+              fontSize: '1.2rem',
+            }}
+          >
+            Send Message
+          </Button>
         </Container>
       </Box>
     </Box>
