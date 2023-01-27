@@ -12,6 +12,7 @@ import { AboutPage } from './pages/AboutUsPage';
 import { CategoryPage } from './pages/CategoryPage';
 import { AuthorPage } from './pages/AuthorPage';
 import { ContactUsPage } from './pages/ContactUsPage';
+import { PrivacyPolicyPage } from './pages/PrivacyPolicy';
 
 export const App: FC = () => {
   const queryClient = new QueryClient();
@@ -44,6 +45,10 @@ export const App: FC = () => {
     {
       path: '/contact',
       element: <ContactUsPage />,
+    },
+    {
+      path: '/privacy',
+      element: <PrivacyPolicyPage />,
     },
   ]);
 
