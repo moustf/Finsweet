@@ -9,7 +9,7 @@ import { LandingPage } from './pages/LandingPage';
 import { AllPostsPage } from './pages/AllPostsPage';
 import { SinglePostPage } from './pages/SinglePostPage';
 import { AboutPage } from './pages/AboutUsPage';
-import { CategoryPage } from './pages/CategoryPage';
+import { BlogPage } from './pages/BlogPage';
 import { AuthorPage } from './pages/AuthorPage';
 import { ContactUsPage } from './pages/ContactUsPage';
 import { PrivacyPolicyPage } from './pages/PrivacyPolicy';
@@ -35,8 +35,8 @@ export const App: FC = () => {
       element: <AboutPage />,
     },
     {
-      path: '/category',
-      element: <CategoryPage />,
+      path: '/blog',
+      element: <BlogPage />,
     },
     {
       path: '/author',

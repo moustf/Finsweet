@@ -6,7 +6,7 @@ import { CategorySection } from '../components/blogPage/CategorySection';
 import { MainSections } from '../components/blogPage/MainSections';
 import { Footer } from '../components/Footer';
 
-export const CategoryPage: FC = () => (
+export const BlogPage: FC = () => (
   <Box
     component="main"
   >
