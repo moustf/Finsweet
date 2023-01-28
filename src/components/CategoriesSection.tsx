@@ -6,25 +6,20 @@ import CyborgIcon from '../assets/cyborg.png';
 import EconomyIcon from '../assets/economy.png';
 import RocketIcon from '../assets/rocket.png';
 
-export const CategoriesSection: FC<{ page: string }> = ({ page }) => {
+export const CategoriesSection: FC = () => {
   const [index, setIndex] = useState<number>(1);
 
   return (
     <Box
       sx={{
         width: '100%',
-        height: '21rem',
+        height: {
+          xs: '165vh', sm: '65vh', md: '68vh', lg: '48vh', xl: '48vh',
+        },
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        transform: {
-          xs: page === 'all-posts' ? 'translateY(40rem)' : 'translateY(105rem)',
-          sm: page === 'all-posts' ? 'translateY(18rem)' : 'translateY(72rem)',
-          md: page === 'all-posts' ? 'translateY(15rem)' : 'translateY(67rem)',
-          lg: 'translateY(10rem)',
-          xl: 'translateY(5rem)',
-        },
         mb: '8rem',
       }}
     >

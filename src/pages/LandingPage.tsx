@@ -22,12 +22,12 @@ export const LandingPage: FC = () => (
     <LandingSection />
     <PostsSection />
     <MottoSection />
-    <CategoriesSection page="landing" />
+    <CategoriesSection />
     <OurStoriesSection />
     <ListOfAuthorsSection />
     <FeaturedInSection />
     <TestimonialsSection />
-    <JoinOurTeamSection page="landing" />
-    <Footer page="landing" />
+    <JoinOurTeamSection />
+    <Footer />
   </Box>
 );

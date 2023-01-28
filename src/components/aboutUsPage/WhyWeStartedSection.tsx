@@ -9,15 +9,9 @@ export const WhyWeStartedSection: FC = () => (
     sx={{
       width: '100%',
       p: {
-        xs: '2rem', sm: '2rem', md: '2rem 3rem', lg: '3rem 5rem', xl: '3rem 5rem',
+        xs: '2rem', sm: '2rem', md: '0 3rem', lg: '3rem 5rem', xl: '3rem 5rem',
       },
-      transform: {
-        xs: 'translateY(-8rem)',
-        sm: 'translateY(-10rem)',
-        md: 'translateY(-10rem)',
-        lg: 'translateY(-6rem)',
-        xl: 'translateY(-5rem)',
-      },
+      mb: '8rem',
     }}
   >
     <Grid

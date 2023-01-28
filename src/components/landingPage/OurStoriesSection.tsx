@@ -9,16 +9,11 @@ export const OurStoriesSection: FC = () => (
   <Box
     sx={{
       width: '100%',
-      height: '70vh',
-      p: {
-        xs: '1rem', sm: '5rem', md: '5rem', lg: '5rem', xl: '5rem',
+      height: {
+        xs: '83vh', sm: '95vh', md: '115vh', lg: '65vh', xl: '78vh',
       },
-      transform: {
-        xs: 'translateY(138rem)',
-        sm: 'translateY(78rem)',
-        md: 'translateY(70rem)',
-        lg: 'translateY(5rem)',
-        xl: 'none',
+      p: {
+        xs: '0 1rem', sm: '0 5rem', md: '0 5rem', lg: '0 5rem', xl: '0 5rem',
       },
       mb: '8rem',
     }}
@@ -56,7 +51,7 @@ export const OurStoriesSection: FC = () => (
         <Box
           sx={{
             width: {
-              xs: '90%', sm: '80%', md: '80%', lg: '90%', xl: '60rem',
+              xs: '90%', sm: '80%', md: '80%', lg: '120%', xl: '60rem',
             },
             height: {
               xs: '45vh', sm: '50vh', md: '45vh', lg: '45vh', xl: '38rem',
@@ -72,7 +67,7 @@ export const OurStoriesSection: FC = () => (
               xs: 'translate(5%, -12%)',
               sm: 'translate(15%, -15%)',
               md: 'translate(12%, -25%)',
-              lg: 'translate(-60%, 20%)',
+              lg: 'translate(-40%, 35%)',
               xl: 'translate(-45%, 29.5%)',
             },
             borderBottom: {

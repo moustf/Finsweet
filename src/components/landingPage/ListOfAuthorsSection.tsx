@@ -14,18 +14,16 @@ export const ListOfAuthorsSection: FC = () => {
     <Box
       sx={{
         width: '100%',
-        height: '30rem',
-        p: '5rem',
+        height: {
+          xs: '208vh', sm: '82vh', md: '110vh', lg: '105vh', xl: '53vh',
+        },
+        p: {
+          xs: '1rem', sm: '1rem', mb: '0 5rem', lg: '0 5rem', xl: '0 5rem',
+        },
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        transform: {
-          xs: 'translateY(140rem)',
-          sm: 'translateY(89rem)',
-          md: 'translateY(95rem)',
-          lg: 'translateY(-2rem)',
-          xl: 'translateY(10rem)',
-        },
+        mb: '8rem',
       }}
     >
       <Typography
@@ -49,7 +47,7 @@ export const ListOfAuthorsSection: FC = () => {
           xs: 'center', sm: 'center', md: 'center', lg: 'center', xl: 'space-between',
         },
         gap: {
-          xs: 0, sm: 0, md: '5rem', lg: '5rem', xl: 0,
+          xs: 0, sm: '2rem', md: '5rem', lg: '5rem', xl: 0,
         },
         alignItems: 'center',
         flexWrap: 'wrap',

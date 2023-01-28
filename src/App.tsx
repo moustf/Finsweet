@@ -6,8 +6,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import { theme } from './theme';
 import { LandingPage } from './pages/LandingPage';
-import { AllPostsPage } from './pages/allPostsPage';
-import { SinglePostPage } from './pages/singlePostPage';
+import { AllPostsPage } from './pages/AllPostsPage';
+import { SinglePostPage } from './pages/SinglePostPage';
 import { AboutPage } from './pages/AboutUsPage';
 import { CategoryPage } from './pages/CategoryPage';
 import { AuthorPage } from './pages/AuthorPage';

@@ -12,6 +12,6 @@ export const AuthorPage: FC = () => (
     <Header />
     <IntroductionSection />
     <PostsSection />
-    <Footer page="author" />
+    <Footer />
   </Box>
 );

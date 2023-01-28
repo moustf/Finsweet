@@ -9,9 +9,6 @@ export const AllPosts: FC = () => (
     p: {
       xs: '0 1rem', sm: '0 1rem', md: '0 2rem', lg: '0 2rem', xl: '0 2rem',
     },
-    transform: {
-      xs: 'translateY(2rem)', sm: 'translateY(20rem)', md: 'translateY(5rem)', lg: 'none', xl: 'none',
-    },
   }}
   >
     <Box sx={{
@@ -39,7 +36,7 @@ export const AllPosts: FC = () => (
           fontSize: { lg: '2.5rem' },
         }}
       >
-        Featured Post
+        All Posts
       </Typography>
       <Button
         variant="text"

@@ -13,6 +13,6 @@ export const CategoryPage: FC = () => (
     <Header />
     <CategorySection />
     <MainSections />
-    <Footer page="category" />
+    <Footer />
   </Box>
 );

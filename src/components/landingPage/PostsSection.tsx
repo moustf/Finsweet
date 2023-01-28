@@ -8,7 +8,9 @@ export const PostsSection: FC = () => (
   <Box
     sx={{
       width: '100%',
-      height: '90vh',
+      height: {
+        xs: '230vh', sm: '215vh', md: '190vh', lg: '100vh', xl: '100vh',
+      },
       p: {
         xs: '0 1rem', sm: '0 1rem', md: '0 5rem', lg: '0 5rem', xl: '0 5rem',
       },

@@ -13,21 +13,16 @@ export const TestimonialsSection: FC = () => (
   <Box
     sx={{
       width: '100%',
-      height: '30rem',
+      height: {
+        xs: '85vh', sm: '67vh', md: '80vh', lg: '45vh', xl: '60vh',
+      },
       p: {
-        xs: '1rem', sm: '5rem', md: '5rem', lg: '5rem', xl: '5rem',
+        xs: '0 1rem', sm: '0 5rem', md: '0 5rem', lg: '0 5rem', xl: '0 5rem',
       },
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      transform: {
-        xs: 'translateY(240rem)',
-        sm: 'translateY(182rem)',
-        md: 'translateY(148rem)',
-        lg: 'translateY(34rem)',
-        xl: 'translateY(20rem)',
-      },
-      mb: '30rem',
+      mb: '8rem',
     }}
   >
     <Grid

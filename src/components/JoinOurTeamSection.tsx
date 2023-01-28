@@ -1,43 +1,23 @@
 import { Box, Button, Typography } from '@mui/material';
 import { FC } from 'react';
 
-export const JoinOurTeamSection: FC<{ page: string }> = ({ page }) => (
+export const JoinOurTeamSection: FC = () => (
   <Box
     sx={{
       width: '100%',
-      height: '20rem',
-      p: '1rem',
+      height: {
+        xs: '45vh', sm: '35vh', md: '35vh', lg: '40vh', xl: '40vh',
+      },
+      p: {
+        xs: '1rem', sm: '1rem', mb: '0 5rem', lg: '0 5rem', xl: '0 5rem',
+      },
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center',
       gap: '2rem',
       textAlign: 'center',
-      transform: {
-        xs: page === 'all-posts'
-          ? 'translateY(74rem)'
-          : page === 'single-post'
-            ? 'translateY(3rem)'
-            : page === 'about'
-              ? 'translateY(183rem)'
-              : 'translateY(225rem)',
-        sm: page === 'all-posts'
-          ? 'translateY(28rem)'
-          : page === 'single-post'
-            ? 'translateY(0rem)'
-            : page === 'about'
-              ? 'translateY(178rem)'
-              : 'translateY(165rem)',
-        md: page === 'all-posts'
-          ? 'translateY(22rem)'
-          : page === 'single-post'
-            ? 'translateY(2rem)'
-            : page === 'about'
-              ? 'translateY(90rem)'
-              : 'translateY(133rem)',
-        lg: page === 'about' ? 'translateY(72rem)' : 'translateY(8rem)',
-        xl: page === 'about' ? 'translateY(42rem)' : 'translateY(3rem)',
-      },
+      mb: '8rem',
     }}
   >
     <Typography

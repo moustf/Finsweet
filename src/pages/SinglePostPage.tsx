@@ -14,7 +14,7 @@ export const SinglePostPage: FC = () => (
     <InfoAndTitleSection />
     <PostSection />
     <MorePostsSection />
-    <JoinOurTeamSection page="single-post" />
-    <Footer page="single-post" />
+    <JoinOurTeamSection />
+    <Footer />
   </Box>
 );

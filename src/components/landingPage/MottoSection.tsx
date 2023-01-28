@@ -8,15 +8,13 @@ export const MottoSection: FC = () => (
     sx={{
       width: '100%',
       height: {
-        xs: '100vh', sm: '100vh', md: '100vh', lg: '60vh', xl: '60vh',
+        xs: '90vh', sm: '85vh', md: '95vh', lg: '62vh', xl: '80vh',
       },
-      padding: {
-        xs: '1rem', sm: '1rem', mb: '5rem', lg: '5rem', xl: '5rem',
+      p: {
+        xs: '1rem', sm: '1rem', mb: '0 5rem', lg: '0 5rem', xl: '0 5rem',
       },
-      mb: '12rem',
-      transform: {
-        xs: 'translateY(78rem)', sm: 'translateY(70rem)', md: 'translateY(61rem)', lg: 'translateY(3rem)', xl: 'none',
-      },
+      mb: '8rem',
+      boxSizing: 'border-box',
     }}
   >
     <Box

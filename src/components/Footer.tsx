@@ -5,11 +5,13 @@ import Logo from '../assets/Logo.png';
 import { Subscription } from './Subscription';
 import { FooterSocial } from './FooterSocial';
 
-export const Footer: FC<{ page: string }> = ({ page }) => (
+export const Footer: FC = () => (
   <Box
     sx={{
       width: '100%',
-      height: '35rem',
+      height: {
+        xs: '65vh', sm: '50vh', md: '65vh', lg: '60vh', xl: '55vh',
+      },
       p: {
         xs: '3.75rem 2rem', sm: '3.75rem 2rem', md: '3.75rem 2rem', lg: '3.75rem 5rem', xl: '3.75rem 5rem',
       },
@@ -18,55 +20,6 @@ export const Footer: FC<{ page: string }> = ({ page }) => (
       flexDirection: 'column',
       justifyContent: 'space-between',
       alignItems: 'center',
-      transform: {
-        xs: page === 'all-posts'
-          ? 'translateY(78rem)'
-          : page === 'single-post'
-            ? 'translateY(5rem)'
-            : page === 'about'
-              ? 'translateY(188rem)'
-              : page === 'category'
-                ? 'translateY(5rem)'
-                : page === 'author'
-                  ? 'none'
-                  : page === 'contact'
-                    ? 'none'
-                    : page === 'privacy'
-                      ? 'none'
-                      : 'translateY(228rem)',
-        sm: page === 'all-posts'
-          ? 'translateY(32rem)'
-          : page === 'single-post'
-            ? 'translateY(2rem)'
-            : page === 'about'
-              ? 'translateY(180rem)'
-              : page === 'category'
-                ? 'translateY(8rem)'
-                : page === 'author'
-                  ? 'none'
-                  : page === 'contact'
-                    ? 'none'
-                    : page === 'privacy'
-                      ? 'none'
-                      : 'translateY(166rem)',
-        md: page === 'all-posts'
-          ? 'translateY(25rem)'
-          : page === 'single-post'
-            ? 'translateY(3rem)'
-            : page === 'about'
-              ? 'translateY(93rem)'
-              : page === 'category'
-                ? 'translateY(10rem)'
-                : page === 'author'
-                  ? 'none'
-                  : page === 'contact'
-                    ? 'none'
-                    : page === 'privacy'
-                      ? 'none'
-                      : 'translateY(135rem)',
-        lg: page === 'about' ? 'translateY(75rem)' : 'translateY(8rem)',
-        xl: page === 'about' ? 'translateY(45rem)' : 'translateY(5rem)',
-      },
     }}
   >
     <Box

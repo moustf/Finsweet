@@ -54,7 +54,7 @@ export const AllPostsSection: FC = () => (
       display: 'flex',
       flexDirection: 'column',
       gap: '3rem',
-      mb: '4rem',
+      mb: '8rem',
     }}
   >
     <Typography

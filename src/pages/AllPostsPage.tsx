@@ -15,8 +15,8 @@ export const AllPostsPage: FC = () => (
     <Header />
     <FeaturedPostSection />
     <AllPostsSection />
-    <CategoriesSection page="all-posts" />
-    <JoinOurTeamSection page="all-posts" />
-    <Footer page="all-posts" />
+    <CategoriesSection />
+    <JoinOurTeamSection />
+    <Footer />
   </Box>
 );

@@ -10,7 +10,7 @@ export const FeaturedPost: FC = () => (
     sx={{
       width: '100%',
       height: {
-        xs: '100vh', sm: '65vh', md: '90vh', lg: '90vh', xl: '90vh',
+        xs: '107vh', sm: '102vh', md: '90vh', lg: '90vh', xl: '90vh',
       },
       mb: { xs: '5rem' },
     }}

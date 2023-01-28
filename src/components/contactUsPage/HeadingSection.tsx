@@ -8,7 +8,7 @@ export const HeadingSection: FC = () => (
     sx={{
       width: '100%',
       height: {
-        xs: '20rem', sm: '20rem', md: '40vh', lg: '45vh', xl: '45vh',
+        xs: '35vh', sm: '28vh', md: '40vh', lg: '45vh', xl: '45vh',
       },
       display: 'flex',
       flexDirection: 'column',
