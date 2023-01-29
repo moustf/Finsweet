@@ -35,13 +35,19 @@ export const FeaturedPost: FC = () => (
         >
           By
         </Typography>
-        <Typography
-          variant="body1"
-          component="p"
-          sx={{ color: '#592EA9', fontSize: '1.1rem' }}
+        <Button
+          variant="text"
+          sx={{ textTransform: 'none' }}
+          href="/author"
         >
-          James West
-        </Typography>
+          <Typography
+            variant="body1"
+            component="p"
+            sx={{ color: '#592EA9', fontSize: '1.1rem' }}
+          >
+            James West
+          </Typography>
+        </Button>
         <Divider
           orientation="vertical"
           flexItem
@@ -73,6 +79,7 @@ export const FeaturedPost: FC = () => (
       <Button
         variant="contained"
         sx={styles.featuredPostBtn}
+        href="/post"
       >
         Read More &gt;
       </Button>

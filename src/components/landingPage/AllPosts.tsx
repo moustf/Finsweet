@@ -16,7 +16,7 @@ export const AllPosts: FC = () => (
       </Typography>
       <Button
         variant="text"
-        href="/posts"
+        href="/all-posts"
         sx={styles.allPostsBtn}
       >
         View All

@@ -1,5 +1,5 @@
 import {
-  Box, Grid, Typography, Divider,
+  Box, Grid, Typography, Divider, Button,
 } from '@mui/material';
 import { FC } from 'react';
 
@@ -24,13 +24,19 @@ const PostCard: FC<{ img: string }> = ({ img }) => (
       >
         By
       </Typography>
-      <Typography
-        variant="body1"
-        component="p"
-        sx={{ color: '#592EA9', fontSize: '1.1rem' }}
+      <Button
+        variant="text"
+        sx={{ textTransform: 'none' }}
+        href="/author"
       >
-        John Doe
-      </Typography>
+        <Typography
+          variant="body1"
+          component="p"
+          sx={{ color: '#592EA9', fontSize: '1.1rem' }}
+        >
+          John Doe
+        </Typography>
+      </Button>
       <Divider
         orientation="vertical"
         flexItem
@@ -47,7 +53,7 @@ const PostCard: FC<{ img: string }> = ({ img }) => (
     <Typography
       variant="h3"
       component="h3"
-      sx={styles.postCardDivider}
+      sx={styles.postCardH3}
     >
       A UX Case Study Creating a Studious Environment for Students:
     </Typography>

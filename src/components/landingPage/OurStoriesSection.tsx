@@ -68,6 +68,7 @@ export const OurStoriesSection: FC = () => (
           <Button
             variant="contained"
             sx={styles.ourStoriesButton}
+            href="/about"
           >
             Discover our story &gt;
           </Button>

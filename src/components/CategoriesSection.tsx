@@ -1,5 +1,6 @@
 import { FC, useState } from 'react';
 import { Grid, Box, Typography } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 import BusinessIcon from '../assets/business.png';
 import CyborgIcon from '../assets/cyborg.png';
@@ -9,6 +10,7 @@ import { styles } from './styles';
 
 export const CategoriesSection: FC = () => {
   const [index, setIndex] = useState<number>(1);
+  const navigate = useNavigate();
 
   return (
     <Box
@@ -42,7 +44,10 @@ export const CategoriesSection: FC = () => {
                 bgcolor: index === 1 ? 'primary.main' : '',
                 ...styles.categoriesSectionBox2,
               }}
-              onClick={() => setIndex(1)}
+              onClick={() => {
+                setIndex(1);
+                navigate('/blog');
+              }}
             >
               <Box sx={styles.categoriesSectionBox3}>
                 <img src={BusinessIcon} alt="business icon" className="category__image" />
@@ -77,7 +82,10 @@ export const CategoriesSection: FC = () => {
                 bgcolor: index === 2 ? 'primary.main' : '',
                 ...styles.categoriesSectionBox4,
               }}
-              onClick={() => setIndex(2)}
+              onClick={() => {
+                setIndex(2);
+                navigate('/blog');
+              }}
             >
               <Box sx={styles.categoriesSectionBox5}>
                 <img src={RocketIcon} alt="business icon" className="category__image" />
@@ -112,7 +120,10 @@ export const CategoriesSection: FC = () => {
                 bgcolor: index === 3 ? 'primary.main' : '',
                 ...styles.categoriesSectionBox6,
               }}
-              onClick={() => setIndex(3)}
+              onClick={() => {
+                setIndex(3);
+                navigate('/blog');
+              }}
             >
               <Box sx={styles.categoriesSectionBox7}>
                 <img src={EconomyIcon} alt="business icon" className="category__image" />
@@ -147,7 +158,10 @@ export const CategoriesSection: FC = () => {
                 bgcolor: index === 4 ? 'primary.main' : '',
                 ...styles.categoriesSectionBox8,
               }}
-              onClick={() => setIndex(4)}
+              onClick={() => {
+                setIndex(4);
+                navigate('/blog');
+              }}
             >
               <Box sx={styles.categoriesSectionBox9}>
                 <img src={CyborgIcon} alt="business icon" className="category__image" />

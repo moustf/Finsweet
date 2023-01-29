@@ -54,6 +54,7 @@ export const MottoSection: FC = () => (
             <Button
               variant="text"
               sx={styles.mottoSectionReadMoreBtn}
+              href="/about"
             >
               Read More &gt;
             </Button>

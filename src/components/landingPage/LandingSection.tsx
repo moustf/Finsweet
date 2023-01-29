@@ -40,13 +40,19 @@ export const LandingSection: FC = () => (
       >
         By
       </Typography>
-      <Typography
-        variant="body1"
-        component="p"
-        sx={{ color: 'primary.main', fontSize: '1.2rem' }}
+      <Button
+        variant="text"
+        sx={{ textTransform: 'none' }}
+        href="/author"
       >
-        James West
-      </Typography>
+        <Typography
+          variant="body1"
+          component="p"
+          sx={{ color: 'primary.main', fontSize: '1.2rem' }}
+        >
+          James West
+        </Typography>
+      </Button>
       <Divider
         orientation="vertical"
         flexItem
@@ -71,6 +77,7 @@ export const LandingSection: FC = () => (
     <Button
       variant="contained"
       sx={styles.landingSectionBtn}
+      href="/post"
     >
       Read More &gt;
     </Button>

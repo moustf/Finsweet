@@ -47,13 +47,19 @@ export const FeaturedPostSection: FC = () => (
           >
             By
           </Typography>
-          <Typography
-            variant="body1"
-            component="p"
-            sx={{ color: '#592EA9', fontSize: '1.2rem' }}
+          <Button
+            variant="text"
+            href="/author"
+            sx={{ textTransform: 'none' }}
           >
-            John Doe
-          </Typography>
+            <Typography
+              variant="body1"
+              component="p"
+              sx={{ color: '#592EA9', fontSize: '1.2rem' }}
+            >
+              John Doe
+            </Typography>
+          </Button>
           <Divider
             orientation="vertical"
             flexItem
@@ -78,6 +84,7 @@ export const FeaturedPostSection: FC = () => (
         <Button
           variant="contained"
           sx={styles.featuredPostReadMoreBtn}
+          href="/post"
         >
           Read More &gt;
         </Button>

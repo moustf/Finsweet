@@ -1,6 +1,7 @@
 import { Box, Typography } from '@mui/material';
 import { FC } from 'react';
 import { v4 as uuid } from 'uuid';
+import { useNavigate } from 'react-router';
 
 import PostPic from '../../assets/post-section-pic.png';
 import { styles } from './styles';
@@ -28,22 +29,26 @@ const Paragraph: FC = () => (
   </Typography>
 );
 
-export const PostSection: FC = () => (
-  <Box
-    component="section"
-    sx={styles.postSectionMain}
-  >
-    <img src={PostPic} alt="post" className="single-post__pic" />
+export const PostSection: FC = () => {
+  const navigate = useNavigate();
+
+  return (
     <Box
-      sx={styles.postSectionBox1}
+      component="section"
+      sx={styles.postSectionMain}
+      onClick={() => navigate('/post')}
     >
-      <Heading />
-      <Paragraph />
-      <Heading />
-      <Paragraph />
-      <Paragraph />
-      <ul style={{ paddingLeft: '1rem' }}>
-        {
+      <img src={PostPic} alt="post" className="single-post__pic" />
+      <Box
+        sx={styles.postSectionBox1}
+      >
+        <Heading />
+        <Paragraph />
+        <Heading />
+        <Paragraph />
+        <Paragraph />
+        <ul style={{ paddingLeft: '1rem' }}>
+          {
           [
             'Lorem ipsum dolor sit amet',
             'Non blandit massa enim nec scelerisque',
@@ -60,10 +65,11 @@ export const PostSection: FC = () => (
             </li>
           ))
           }
-      </ul>
-      <Paragraph />
-      <Heading />
-      <Paragraph />
+        </ul>
+        <Paragraph />
+        <Heading />
+        <Paragraph />
+      </Box>
     </Box>
-  </Box>
-);
+  );
+};

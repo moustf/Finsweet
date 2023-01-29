@@ -24,6 +24,7 @@ export const JoinOurTeamSection: FC = () => (
     <Button
       variant="contained"
       sx={styles.joinOurTeamBtn}
+      href="/contact"
     >
       Join Now
     </Button>

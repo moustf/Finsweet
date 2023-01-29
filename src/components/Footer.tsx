@@ -9,6 +9,7 @@ import { styles } from './styles';
 export const Footer: FC = () => (
   <Box
     sx={styles.footerMain}
+    id="footer"
   >
     <Box
       sx={styles.footerBox1}
@@ -24,16 +25,16 @@ export const Footer: FC = () => (
       <Box
         sx={styles.footerBox2}
       >
-        <Button variant="text" href="#home" className="footer__nav-button">
+        <Button variant="text" href="/" className="footer__nav-button">
           <Typography variant="body1" component="p" className="footer__text">Home</Typography>
         </Button>
-        <Button variant="text" href="#blog" className="footer__nav-button">
-          <Typography variant="body1" component="p" className="footer__text">Body</Typography>
+        <Button variant="text" href="/blog" className="footer__nav-button">
+          <Typography variant="body1" component="p" className="footer__text">Blog</Typography>
         </Button>
-        <Button variant="text" href="#about" className="footer__nav-button">
+        <Button variant="text" href="/about" className="footer__nav-button">
           <Typography variant="body1" component="p" className="footer__text">About Us</Typography>
         </Button>
-        <Button variant="text" href="#contact" className="footer__nav-button">
+        <Button variant="text" href="/contact" className="footer__nav-button">
           <Typography variant="body1" component="p" className="footer__text">Contact Us</Typography>
         </Button>
         <Button variant="text" href="/privacy" className="footer__nav-button">

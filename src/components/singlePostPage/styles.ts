@@ -127,6 +127,7 @@ export const styles = {
       width: '100%',
       objectFit: 'cover',
     },
+    cursor: 'pointer',
   },
   postCardBox1: {
     width: '100%',
