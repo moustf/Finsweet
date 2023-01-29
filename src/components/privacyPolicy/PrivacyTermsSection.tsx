@@ -1,6 +1,8 @@
 import { FC } from 'react';
 import { Box, Typography } from '@mui/material';
 
+import { styles } from './styles';
+
 const paragraphs = [
   `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -42,17 +44,7 @@ const Paragraph: FC<{ text: string }> = ({ text }) => (
   <Typography
     variant="body1"
     component="p"
-    sx={{
-      fontFamily: "'Inter', sans-serif",
-      fontSize: {
-        xs: '0.7rem', sm: '0.9rem', md: '1rem', lg: '1rem', xl: '1rem',
-      },
-      fontWeight: 400,
-      color: '#6D6E76',
-      mb: {
-        xs: '1rem', sm: '1rem', md: '1.5rem', lg: '2rem', xl: '2rem',
-      },
-    }}
+    sx={styles.privacySectionParagraph}
   >
     {text}
   </Typography>
@@ -62,21 +54,7 @@ const Title: FC<{ text: string }> = ({ text }) => (
   <Typography
     variant="h2"
     component="h2"
-    sx={{
-      width: '100%',
-      fontWeight: 700,
-      fontFamily: "'Sen', sans-serif",
-      fontSize: {
-        xs: '1.5rem', sm: '1.8rem', md: '2rem', lg: '2.3rem', xl: '2.3rem',
-      },
-      color: 'secondary.main',
-      letterSpacing: {
-        xs: 0, sm: 0, md: 0, lg: '-2px', xl: '-2px',
-      },
-      mb: {
-        xs: '0.8rem', sm: '0.8rem', md: '1rem', lg: '1.2rem', xl: '1.2rem',
-      },
-    }}
+    sx={styles.privacySectionTitle}
   >
     {text}
   </Typography>
@@ -85,34 +63,11 @@ const Title: FC<{ text: string }> = ({ text }) => (
 export const PrivacyTermsSection: FC = () => (
   <Box
     component="section"
-    sx={{
-      width: '100%',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      m: '8rem 0',
-    }}
+    sx={styles.privacySectionMain}
   >
     <Box
       component="section"
-      sx={{
-        width: {
-          xs: '100%', sm: '100%', md: '65%', lg: '60%', xl: '50%',
-        },
-        p: {
-          xs: '0 2rem', sm: '0 2rem', md: '0 2rem', lg: '0 5rem', xl: '0 5rem',
-        },
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        gap: '4rem',
-        '& .single-post__pic': {
-          width: '100%',
-          objectFit: 'contain',
-        },
-        mb: '5rem',
-      }}
+      sx={styles.privacySectionSectionInner}
     >
       <Title text="Lorem ipsum dolor sit amet" />
       <Paragraph text={paragraphs[0]} />

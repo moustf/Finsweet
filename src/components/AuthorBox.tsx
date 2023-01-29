@@ -9,6 +9,8 @@ import {
   LinkedIn as LinkedInIcon,
 } from '@mui/icons-material';
 
+import { styles } from './styles';
+
 export const AuthorBox: FC<{
   index: number,
   arrange: number,
@@ -24,16 +26,8 @@ export const AuthorBox: FC<{
 }) => (
   <Box
     sx={{
-      width: '23rem',
-      height: '24rem',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      gap: '1.2rem',
-      mb: '2rem',
       bgcolor: index === arrange ? 'primary.light' : 'secondary.light',
-      cursor: 'pointer',
+      ...styles.authorBoxMain,
     }}
     onClick={() => setIndex(arrange)}
   >
@@ -41,45 +35,19 @@ export const AuthorBox: FC<{
     <Typography
       variant="h3"
       component="h3"
-      sx={{
-        width: '12rem',
-        fontFamily: "'Sen', sans-serif",
-        fontWight: 700,
-        fontSize: '1.6rem',
-        letterSpacing: '-1px',
-        textAlign: 'center',
-        color: 'secondary.main',
-      }}
+      sx={styles.authorBoxH3}
     >
       {name}
     </Typography>
     <Typography
       variant="body2"
       component="p"
-      sx={{
-        width: '15rem',
-        fontSize: '0.9rem',
-        color: '#6D6E76',
-        fontFamily: "'Inter', sans-serif",
-        textAlign: 'center',
-      }}
+      sx={styles.authorBoxP}
     >
       Content Writer @Company
     </Typography>
     <Box
-      sx={{
-        width: '100%',
-        height: '1rem',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        gap: '1rem',
-        '& .author-socials': {
-          width: '1rem',
-          height: '1.1rem',
-          color: 'secondary.main',
-        },
-      }}
+      sx={styles.authorBoxInnerBox}
     >
       <FacebookIcon className="author-socials" />
       <TwitterIcon className="author-socials" />

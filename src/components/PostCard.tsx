@@ -1,6 +1,8 @@
 import { FC } from 'react';
 import { Box, Typography, Grid } from '@mui/material';
 
+import { styles } from './styles';
+
 export const PostCard: FC<{
   img: string,
   title: string,
@@ -13,7 +15,11 @@ export const PostCard: FC<{
   <Box
     sx={{
       p: {
-        xs: '1rem 0', sm: '1rem 0', md: '2rem 0', lg: '2rem 0', xl: '2rem 0',
+        xs: '1rem 0',
+        sm: '1rem 0',
+        md: '2rem 0',
+        lg: '2rem 0',
+        xl: '2rem 0',
       },
     }}
   >
@@ -47,33 +53,12 @@ export const PostCard: FC<{
         xl={8}
       >
         <Box
-          sx={{
-            width: '100%',
-            height: '100%',
-            p: {
-              xs: 0, sm: 0, md: 0, lg: '2rem 0 2rem 2rem', xl: '2rem 0 2rem 1.5rem',
-            },
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'flex-start',
-          }}
+          sx={styles.postCardBox}
         >
           <Typography
             variant="body1"
             component="p"
-            sx={{
-              width: '70%',
-              fontSize: '1.1rem',
-              fontWeight: 600,
-              color: '#592EA9',
-              letterSpacing: '3px',
-              fontFamily: "'Inter', sans-serif",
-              mb: {
-                xs: '0.7rem', sm: '0.7rem', md: '0.9rem', lg: '2rem', xl: '1.5rem',
-              },
-              textTransform: 'uppercase',
-            }}
+            sx={styles.postCardP1}
           >
             {title}
           </Typography>
@@ -88,8 +73,6 @@ export const PostCard: FC<{
                 : {
                   xs: '100%', sm: '100%', md: '75%', lg: '80%', xl: '80%',
                 },
-              fontWeight: 700,
-              color: 'secondary.main',
               fontSize: page === 'blog'
                 ? {
                   xs: '1.2rem', sm: '1.3rem', md: '2rem', lg: '2rem', xl: '3rem',
@@ -97,10 +80,7 @@ export const PostCard: FC<{
                 : {
                   xs: '1.2rem', sm: '1.3rem', md: '2rem', lg: '2.3rem', xl: '2.3rem',
                 },
-              fontFamily: "'Sen', sans-serif",
-              mb: {
-                xs: '0.7rem', sm: '0.7rem', md: '0.9rem', lg: '2rem', xl: '2rem',
-              },
+              ...styles.postCardH1,
             }}
           >
             {heading}
@@ -116,7 +96,6 @@ export const PostCard: FC<{
                 : {
                   xs: '100%', sm: '100%', md: '60%', lg: '60%', xl: '80%',
                 },
-              color: '#6D6E76',
               fontSize: page === 'blog'
                 ? {
                   xs: '0.9rem', sm: '0.9rem', md: '1rem', lg: '1.2rem', xl: '1.2rem',
@@ -124,9 +103,7 @@ export const PostCard: FC<{
                 : {
                   xs: '0.9rem', sm: '0.9rem', md: '1rem', lg: '1rem', xl: '1rem',
                 },
-              letterSpacing: {
-                xs: 0, sm: 0, md: '1px', lg: '2px', xl: '2px',
-              },
+              ...styles.postCardP2,
             }}
           >
             {text}

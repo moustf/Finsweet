@@ -4,37 +4,14 @@ import { Box, Button, Typography } from '@mui/material';
 import Logo from '../assets/Logo.png';
 import { Subscription } from './Subscription';
 import { FooterSocial } from './FooterSocial';
+import { styles } from './styles';
 
 export const Footer: FC = () => (
   <Box
-    sx={{
-      width: '100%',
-      height: {
-        xs: '65vh', sm: '50vh', md: '65vh', lg: '60vh', xl: '55vh',
-      },
-      p: {
-        xs: '3.75rem 2rem', sm: '3.75rem 2rem', md: '3.75rem 2rem', lg: '3.75rem 5rem', xl: '3.75rem 5rem',
-      },
-      bgcolor: 'secondary.main',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-    }}
+    sx={styles.footerMain}
   >
     <Box
-      sx={{
-        width: '100%',
-        display: 'flex',
-        flexDirection: {
-          xs: 'column', sm: 'column', md: 'column', lg: 'row', xl: 'row',
-        },
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        gap: {
-          xs: '2rem', sm: '2rem', md: '2rem', lg: '0rem', xl: '0rem',
-        },
-      }}
+      sx={styles.footerBox1}
     >
       <img
         style={{
@@ -45,37 +22,7 @@ export const Footer: FC = () => (
         alt="logo"
       />
       <Box
-        sx={{
-          width: {
-            xs: '100%', sm: '100%', md: '60%', lg: '50%', xl: '40%',
-          },
-          height: {
-            xs: '70%', sm: '70%', md: '70%', lg: '100%', xl: '100%',
-          },
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'center',
-          alignItems: 'center',
-          flexWrap: 'warp',
-          gap: {
-            xs: '.5rem', sm: '3rem', md: '1rem', lg: '1.5rem', xl: '1.5rem',
-          },
-          '& .footer__nav-button': {
-            width: '20%',
-            textTransform: 'none',
-            fontFamily: "'Sen', sans-serif",
-            color: 'secondary.contrastText',
-            '& .footer__text': {
-              fontSize: {
-                xs: '0.7rem', sm: '0.7rem', md: '1rem', lg: '1rem', xl: '1rem',
-              },
-            },
-          },
-          color: 'secondary.main',
-          borderRadius: 0,
-          marginLeft: '1rem',
-          fontWeight: 700,
-        }}
+        sx={styles.footerBox2}
       >
         <Button variant="text" href="#home" className="footer__nav-button">
           <Typography variant="body1" component="p" className="footer__text">Home</Typography>
