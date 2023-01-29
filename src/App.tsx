@@ -13,6 +13,7 @@ import { BlogPage } from './pages/BlogPage';
 import { AuthorPage } from './pages/AuthorPage';
 import { ContactUsPage } from './pages/ContactUsPage';
 import { PrivacyPolicyPage } from './pages/PrivacyPolicy';
+import './App.css';
 
 export const App: FC = () => {
   const queryClient = new QueryClient();
