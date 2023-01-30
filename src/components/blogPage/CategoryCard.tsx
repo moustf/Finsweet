@@ -1,5 +1,8 @@
 import { Dispatch, FC, SetStateAction } from 'react';
 import { Box, Typography } from '@mui/material';
+import { useNavigate } from 'react-router';
+
+import { styles } from './styles';
 
 export const CategoryCard: FC<{
   index: number,
@@ -9,49 +12,29 @@ export const CategoryCard: FC<{
   title: string,
 }> = ({
   index, arrange, setIndex, img, title,
-}) => (
-  <Box
-    component="section"
-    sx={{
-      width: '100%',
-      height: {
-        xs: '10rem', sm: '10rem', md: '10rem', lg: '8rem', xl: '8rem',
-      },
-      pl: '2rem',
-      borderWidth: '1px',
-      borderStyle: 'solid',
-      borderColor: 'secondary.light',
-      display: 'flex',
-      alignItems: 'center',
-      gap: '2rem',
-      bgcolor: index === arrange ? 'primary.main' : '',
-      cursor: 'pointer',
-      '& .category__image': {
-        width: {
-          xs: '3rem', sm: '4rem', md: '5rem', lg: '5rem', xl: '5rem',
-        },
-        height: {
-          xs: '3rem', sm: '4rem', md: '5rem', lg: '5rem', xl: '5rem',
-        },
-      },
-    }}
-    onClick={() => setIndex(arrange)}
-  >
-    <img src={img} alt="business icon" className="category__image" />
-    <Typography
-      variant="h3"
-      component="h3"
+}) => {
+  const navigate = useNavigate();
+
+  return (
+    <Box
+      component="section"
       sx={{
-        fontFamily: "'Sen', sans-serif",
-        fontSize: {
-          xs: '1.5rem', sm: '1.8rem', md: '2rem', lg: '2rem', xl: '2rem',
-        },
-        fontWeight: 700,
-        letterSpacing: '-1px',
-        lineHeight: '2rem',
+        bgcolor: index === arrange ? 'primary.main' : '',
+        ...styles.categoryCardMain,
+      }}
+      onClick={() => {
+        setIndex(arrange);
+        navigate('/blog');
       }}
     >
-      {title}
-    </Typography>
-  </Box>
-);
+      <img src={img} alt="business icon" className="category__image" />
+      <Typography
+        variant="h3"
+        component="h3"
+        sx={styles.categoryCardH3}
+      >
+        {title}
+      </Typography>
+    </Box>
+  );
+};

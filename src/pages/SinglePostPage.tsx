@@ -1,5 +1,5 @@
 import { Box } from '@mui/material';
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 
 import { Header } from '../components/Header';
 import { InfoAndTitleSection } from '../components/singlePostPage/InfoAndTitleSection';
@@ -8,13 +8,19 @@ import { MorePostsSection } from '../components/singlePostPage/MorePostsSection'
 import { JoinOurTeamSection } from '../components/JoinOurTeamSection';
 import { Footer } from '../components/Footer';
 
-export const SinglePostPage: FC = () => (
-  <Box component="main">
-    <Header />
-    <InfoAndTitleSection />
-    <PostSection />
-    <MorePostsSection />
-    <JoinOurTeamSection page="single-post" />
-    <Footer page="single-post" />
-  </Box>
-);
+export const SinglePostPage: FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return (
+    <Box component="main">
+      <Header />
+      <InfoAndTitleSection />
+      <PostSection />
+      <MorePostsSection />
+      <JoinOurTeamSection />
+      <Footer />
+    </Box>
+  );
+};

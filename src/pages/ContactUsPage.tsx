@@ -15,6 +15,6 @@ export const ContactUsPage: FC = () => (
     <HeadingSection />
     <ContactsCard />
     <ContractsForm />
-    <Footer page="contact" />
+    <Footer />
   </Box>
 );

@@ -11,6 +11,7 @@ import BusinessIcon from '../../assets/bus_cat.svg';
 import EconomyIcon from '../../assets/econ_cat.svg';
 import CyborgIcon from '../../assets/cyborg_cat.svg';
 import { TagCircle } from './TagCircle';
+import { styles } from './styles';
 
 export const MainSections: FC = () => {
   const [index, setIndex] = useState<number>(1);
@@ -18,12 +19,7 @@ export const MainSections: FC = () => {
   return (
     <Box
       component="section"
-      sx={{
-        width: '100%',
-        p: {
-          xs: '5rem 2rem', sm: '5rem 2rem', md: '8rem 3rem', lg: '8rem 5rem', xl: '8rem 5rem',
-        },
-      }}
+      sx={styles.mainSectionsMain}
     >
       <Grid
         container
@@ -38,14 +34,7 @@ export const MainSections: FC = () => {
           xl={8}
         >
           <Box
-            sx={{
-              width: '100%',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center',
-              alignItems: 'center',
-              gap: '1.5rem',
-            }}
+            sx={styles.mainSectionsCardsBox}
           >
             <PostCard
               page="category"
@@ -86,38 +75,17 @@ export const MainSections: FC = () => {
           xl={4}
         >
           <Box
-            sx={{
-              width: {
-                xs: '100%', sm: '100%', md: '100%', lg: '100%', xl: '70%',
-              },
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '2rem',
-            }}
+            sx={styles.mainSectionsCategoriesBox}
           >
             <Typography
               variant="h2"
               component="h2"
-              sx={{
-                fontFamily: "'Sen', sans-serif",
-                fontSize: {
-                  xs: '2.25rem', sm: '2.25rem', md: '2.25rem', lg: '2.25rem', xl: '2.25rem',
-                },
-                fontWeight: 700,
-                lineHeight: '48px',
-                letterSpacing: '-2px',
-                color: 'secondary.main',
-              }}
+              sx={styles.mainSectionsCategoriesBoxH2}
             >
               Categories
             </Typography>
             <Box
-              sx={{
-                width: '100%',
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '1.5rem',
-              }}
+              sx={styles.mainSectionsCategoriesCards}
             >
               <CategoryCard
                 index={index}
@@ -159,27 +127,12 @@ export const MainSections: FC = () => {
               <Typography
                 variant="h2"
                 component="h2"
-                sx={{
-                  fontFamily: "'Sen', sans-serif",
-                  fontSize: {
-                    xs: '2.25rem', sm: '2.25rem', md: '2.25rem', lg: '2.25rem', xl: '2.25rem',
-                  },
-                  fontWeight: 700,
-                  lineHeight: '48px',
-                  letterSpacing: '-2px',
-                  color: 'secondary.main',
-                }}
+                sx={styles.mainSectionsTagsBox}
               >
                 All Tags
               </Typography>
               <Box
-                sx={{
-                  width: '100%',
-                  display: 'flex',
-                  flexDirection: 'row',
-                  flexWrap: 'wrap',
-                  gap: '1rem',
-                }}
+                sx={styles.mainSectionsTagsCards}
               >
                 <TagCircle id={1} text="Business" />
                 <TagCircle id={2} text="Experience" />

@@ -1,11 +1,12 @@
-import { Box } from '@mui/material';
 import { FC, useEffect } from 'react';
-import { IntroductionSection } from '../components/authorProfile/IntroductioinSection';
-import { PostsSection } from '../components/authorProfile/PostsSection';
+import { Box } from '@mui/material';
+
 import { Header } from '../components/Header';
+import { CategorySection } from '../components/blogPage/CategorySection';
+import { MainSections } from '../components/blogPage/MainSections';
 import { Footer } from '../components/Footer';
 
-export const AuthorPage: FC = () => {
+export const BlogPage: FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -15,8 +16,8 @@ export const AuthorPage: FC = () => {
       component="main"
     >
       <Header />
-      <IntroductionSection />
-      <PostsSection />
+      <CategorySection />
+      <MainSections />
       <Footer />
     </Box>
   );

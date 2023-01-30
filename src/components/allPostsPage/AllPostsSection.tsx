@@ -10,6 +10,7 @@ import Post2 from '../../assets/post2.svg';
 import Post3 from '../../assets/post3.svg';
 import Post4 from '../../assets/post4.svg';
 import { PostCard } from '../PostCard';
+import { styles } from './styles';
 
 const cards = [
   {
@@ -46,31 +47,16 @@ const cards = [
 
 export const AllPostsSection: FC = () => (
   <Box
-    sx={{
-      width: '100%',
-      p: {
-        xs: '0 1rem', sm: '0 2rem', md: '0 2rem', lg: '0 5rem', xl: '0 5rem',
-      },
-      display: 'flex',
-      flexDirection: 'column',
-      gap: '3rem',
-      mb: '4rem',
-    }}
+    sx={styles.allPostsMain}
   >
     <Typography
       variant="h1"
       component="h1"
-      sx={{
-        fontFamily: "'Sen', sans-serif",
-        fontSize: '3rem',
-        fontWeight: 700,
-        lineHeight: '4rem',
-        letterSpacing: '-2px',
-      }}
+      sx={styles.allPostsTitle}
     >
       All posts
     </Typography>
-    <Divider flexItem sx={{ width: '100%', height: '1px', bgcolor: '#6D6E76' }} />
+    <Divider flexItem sx={styles.allPostsDivider} />
     {
       cards.map(({
         img, title, heading, text,
@@ -86,24 +72,13 @@ export const AllPostsSection: FC = () => (
       ))
     }
     <Box
-      sx={{
-        width: '100%',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
+      sx={styles.allPostsLowerNavBox}
     >
       <Button variant="text" sx={{ textTransform: 'none' }}>
         <Typography
           variant="h4"
           component="h4"
-          sx={{
-            fontSize: '1.2rem',
-            fontWeight: 700,
-            color: '#6D6E76',
-            fontFamily: "'Sen', sans-serif",
-            textAlign: 'center',
-          }}
+          sx={styles.allPostsLowerNavBoxPrev}
         >
           &lt; Prev
         </Typography>
@@ -112,14 +87,7 @@ export const AllPostsSection: FC = () => (
         <Typography
           variant="h3"
           component="h3"
-          sx={{
-            fontSize: '1.5rem',
-            fontWeight: 700,
-            color: 'secondary.main',
-            fontFamily: "'Sen', sans-serif",
-            textAlign: 'center',
-            letterSpacing: '-1px',
-          }}
+          sx={styles.allPostsLowerNavBoxNext}
         >
           Next &gt;
         </Typography>

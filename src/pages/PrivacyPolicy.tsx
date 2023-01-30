@@ -12,6 +12,6 @@ export const PrivacyPolicyPage: FC = () => (
     <Header />
     <HeadingSection />
     <PrivacyTermsSection />
-    <Footer page="privacy" />
+    <Footer />
   </Box>
 );

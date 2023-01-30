@@ -2,40 +2,16 @@ import { FC } from 'react';
 import { Box } from '@mui/material';
 
 import { SingleContactCard } from './SingleContractCard';
+import { styles } from './styles';
 
 export const ContactsCard: FC = () => (
   <Box
     component="section"
-    sx={{
-      width: '100%',
-      height: {
-        xs: '90vh', sm: '72vh', md: '80vh', lg: '50vh', xl: '50vh',
-      },
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'flex-start',
-      gap: '2rem',
-      p: {
-        xs: '0 1rem', sm: '0 2rem', md: '0 3rem', lg: 0, xl: 0,
-      },
-    }}
+    sx={styles.contactsCardMain}
   >
     <Box
       component="section"
-      sx={{
-        width: {
-          xs: '100%', sm: '100%', md: '50rem', lg: '60rem', xl: '60rem',
-        },
-        height: '80%',
-        display: 'flex',
-        justifyContent: {
-          xs: 'center', sm: 'center', md: 'center', lg: 'space-between', xl: 'space-between',
-        },
-        alignItems: 'flex-start',
-        flexWrap: 'wrap',
-        bgcolor: '#592EA9',
-        p: '3rem 4rem',
-      }}
+      sx={styles.contactsCardsBox}
     >
       <SingleContactCard
         title="Working hours"

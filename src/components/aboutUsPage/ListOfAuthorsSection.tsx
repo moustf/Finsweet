@@ -10,6 +10,7 @@ import Author5 from '../../assets/author5.svg';
 import Author6 from '../../assets/author6.svg';
 import Author7 from '../../assets/author7.svg';
 import Author8 from '../../assets/author8.svg';
+import { styles } from './styles';
 
 export const ListOfAuthorsSection: FC = () => {
   const [index, setIndex] = useState<number>(1);
@@ -17,49 +18,16 @@ export const ListOfAuthorsSection: FC = () => {
 
   return (
     <Box
-      sx={{
-        width: '100%',
-        height: '30rem',
-        p: '5rem',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        transform: {
-          xs: 'translateY(-12rem)',
-          sm: 'translateY(-15rem)',
-          md: 'translateY(-15rem)',
-          lg: 'translateY(-2rem)',
-          xl: 'translateY(-2rem)',
-        },
-      }}
+      sx={styles.listOfAuthorsMain}
     >
       <Typography
         variant="h2"
         component="h2"
-        sx={{
-          width: '14.4rem',
-          fontFamily: "'Sen', sans-serif",
-          fontWeight: 700,
-          fontSize: '2.25rem',
-          letterSpacing: '-2px',
-          mb: '3rem',
-        }}
+        sx={styles.listOfAuthorsTitle}
       >
         List of Authors
       </Typography>
-      <Box sx={{
-        width: '100%',
-        display: 'flex',
-        justifyContent: {
-          xs: 'center', sm: 'center', md: 'center', lg: 'center', xl: 'center',
-        },
-        gap: {
-          xs: 0, sm: 0, md: '5rem', lg: '5rem', xl: '5rem',
-        },
-        alignItems: 'center',
-        flexWrap: 'wrap',
-      }}
-      >
+      <Box sx={styles.listOfAuthorsTextBox}>
         <AuthorBox
           index={index}
           arrange={++arrange}

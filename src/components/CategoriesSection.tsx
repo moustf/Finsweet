@@ -1,52 +1,30 @@
 import { FC, useState } from 'react';
 import { Grid, Box, Typography } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 import BusinessIcon from '../assets/business.png';
 import CyborgIcon from '../assets/cyborg.png';
 import EconomyIcon from '../assets/economy.png';
 import RocketIcon from '../assets/rocket.png';
+import { styles } from './styles';
 
-export const CategoriesSection: FC<{ page: string }> = ({ page }) => {
+export const CategoriesSection: FC = () => {
   const [index, setIndex] = useState<number>(1);
+  const navigate = useNavigate();
 
   return (
     <Box
-      sx={{
-        width: '100%',
-        height: '21rem',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        transform: {
-          xs: page === 'all-posts' ? 'translateY(40rem)' : 'translateY(105rem)',
-          sm: page === 'all-posts' ? 'translateY(18rem)' : 'translateY(72rem)',
-          md: page === 'all-posts' ? 'translateY(15rem)' : 'translateY(67rem)',
-          lg: 'translateY(10rem)',
-          xl: 'translateY(5rem)',
-        },
-        mb: '8rem',
-      }}
+      sx={styles.categoriesSectionMain}
     >
       <Typography
         variant="h2"
         component="h2"
-        sx={{
-          fontSize: '2.25rem',
-          fontFamily: "'Sen', sans-serif",
-          fontWeight: 700,
-          letterSpacing: '-2px',
-        }}
+        sx={styles.categoriesSectionH2}
       >
         Choose A Category
       </Typography>
       <Box
-        sx={{
-          width: '100%',
-          p: {
-            xs: '2rem', sm: '2rem', md: '2rem', lg: '5rem', xl: '5rem',
-          },
-        }}
+        sx={styles.categoreisSectionBox1}
       >
         <Grid
           container
@@ -63,59 +41,28 @@ export const CategoriesSection: FC<{ page: string }> = ({ page }) => {
             <Box
               component="section"
               sx={{
-                width: '100%',
-                height: {
-                  xs: '20rem', sm: '20rem', md: '16rem', lg: '16rem', xl: '16rem',
-                },
-                pl: '2rem',
-                borderWidth: '1px',
-                borderStyle: 'solid',
-                borderColor: 'secondary.light',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                gap: '1.2rem',
                 bgcolor: index === 1 ? 'primary.main' : '',
-                cursor: 'pointer',
+                ...styles.categoriesSectionBox2,
               }}
-              onClick={() => setIndex(1)}
+              onClick={() => {
+                setIndex(1);
+                navigate('/blog');
+              }}
             >
-              <Box sx={{
-                width: '3rem',
-                height: '3rem',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                bgcolor: 'primary.light',
-                borderRadius: '0.8rem',
-                '& .category__image': {
-                  width: '3rem',
-                  height: '3rem',
-                },
-              }}
-              >
+              <Box sx={styles.categoriesSectionBox3}>
                 <img src={BusinessIcon} alt="business icon" className="category__image" />
               </Box>
               <Typography
                 variant="h3"
                 component="h3"
-                sx={{
-                  fontFamily: "'Sen', sans-serif",
-                  fontSize: '1.8rem',
-                  fontWeight: 700,
-                }}
+                sx={styles.categoriesSectionFirstH3}
               >
                 Business
               </Typography>
               <Typography
                 variant="body1"
                 component="p"
-                sx={{
-                  width: {
-                    xs: '12rem', sm: '14.5rem', md: '14.5rem', lg: '14.5rem', xl: '14.5rem',
-                  },
-                  color: '#6D6E76',
-                }}
+                sx={styles.categoriesSectionP1}
               >
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
               </Typography>
@@ -132,59 +79,28 @@ export const CategoriesSection: FC<{ page: string }> = ({ page }) => {
             <Box
               component="section"
               sx={{
-                width: '100%',
-                height: {
-                  xs: '20rem', sm: '20rem', md: '16rem', lg: '16rem', xl: '16rem',
-                },
-                pl: '2rem',
-                borderWidth: '1px',
-                borderStyle: 'solid',
-                borderColor: 'secondary.light',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                gap: '1.2rem',
                 bgcolor: index === 2 ? 'primary.main' : '',
-                cursor: 'pointer',
+                ...styles.categoriesSectionBox4,
               }}
-              onClick={() => setIndex(2)}
+              onClick={() => {
+                setIndex(2);
+                navigate('/blog');
+              }}
             >
-              <Box sx={{
-                width: '3rem',
-                height: '3rem',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                bgcolor: 'primary.light',
-                borderRadius: '0.8rem',
-                '& .category__image': {
-                  width: '1.5rem',
-                  height: '1.5rem',
-                },
-              }}
-              >
+              <Box sx={styles.categoriesSectionBox5}>
                 <img src={RocketIcon} alt="business icon" className="category__image" />
               </Box>
               <Typography
                 variant="h3"
                 component="h3"
-                sx={{
-                  fontFamily: "'Sen', sans-serif",
-                  fontSize: '1.8rem',
-                  fontWeight: 700,
-                }}
+                sx={styles.categoriesSectionSecondH3}
               >
                 Startup
               </Typography>
               <Typography
                 variant="body1"
                 component="p"
-                sx={{
-                  width: {
-                    xs: '12rem', sm: '14.5rem', md: '14.5rem', lg: '14.5rem', xl: '14.5rem',
-                  },
-                  color: '#6D6E76',
-                }}
+                sx={styles.categoriesSectionP2}
               >
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
               </Typography>
@@ -201,59 +117,28 @@ export const CategoriesSection: FC<{ page: string }> = ({ page }) => {
             <Box
               component="section"
               sx={{
-                width: '100%',
-                height: {
-                  xs: '20rem', sm: '20rem', md: '16rem', lg: '16rem', xl: '16rem',
-                },
-                pl: '2rem',
-                borderWidth: '1px',
-                borderStyle: 'solid',
-                borderColor: 'secondary.light',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                gap: '1.2rem',
                 bgcolor: index === 3 ? 'primary.main' : '',
-                cursor: 'pointer',
+                ...styles.categoriesSectionBox6,
               }}
-              onClick={() => setIndex(3)}
+              onClick={() => {
+                setIndex(3);
+                navigate('/blog');
+              }}
             >
-              <Box sx={{
-                width: '3rem',
-                height: '3rem',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                bgcolor: 'primary.light',
-                borderRadius: '0.8rem',
-                '& .category__image': {
-                  width: '3rem',
-                  height: '3rem',
-                },
-              }}
-              >
+              <Box sx={styles.categoriesSectionBox7}>
                 <img src={EconomyIcon} alt="business icon" className="category__image" />
               </Box>
               <Typography
                 variant="h3"
                 component="h3"
-                sx={{
-                  fontFamily: "'Sen', sans-serif",
-                  fontSize: '1.8rem',
-                  fontWeight: 700,
-                }}
+                sx={styles.categoriesSectionThirdH3}
               >
                 Economy
               </Typography>
               <Typography
                 variant="body1"
                 component="p"
-                sx={{
-                  width: {
-                    xs: '12rem', sm: '14.5rem', md: '14.5rem', lg: '14.5rem', xl: '14.5rem',
-                  },
-                  color: '#6D6E76',
-                }}
+                sx={styles.categoriesSectionP3}
               >
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
               </Typography>
@@ -270,60 +155,28 @@ export const CategoriesSection: FC<{ page: string }> = ({ page }) => {
             <Box
               component="section"
               sx={{
-                width: '100%',
-                height: {
-                  xs: '20rem', sm: '20rem', md: '16rem', lg: '16rem', xl: '16rem',
-                },
-                pl: '2rem',
-                borderWidth: '1px',
-                borderStyle: 'solid',
-                borderColor: 'secondary.light',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                gap: '1.2rem',
                 bgcolor: index === 4 ? 'primary.main' : '',
-                cursor: 'pointer',
+                ...styles.categoriesSectionBox8,
               }}
-              onClick={() => setIndex(4)}
+              onClick={() => {
+                setIndex(4);
+                navigate('/blog');
+              }}
             >
-              <Box sx={{
-                cursor: 'pointer',
-                width: '3rem',
-                height: '3rem',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                bgcolor: 'primary.light',
-                borderRadius: '0.8rem',
-                '& .category__image': {
-                  width: '1.5rem',
-                  height: '1.5rem',
-                },
-              }}
-              >
+              <Box sx={styles.categoriesSectionBox9}>
                 <img src={CyborgIcon} alt="business icon" className="category__image" />
               </Box>
               <Typography
                 variant="h3"
                 component="h3"
-                sx={{
-                  fontFamily: "'Sen', sans-serif",
-                  fontSize: '1.8rem',
-                  fontWeight: 700,
-                }}
+                sx={styles.categoriesSectionForthH3}
               >
                 Technology
               </Typography>
               <Typography
                 variant="body1"
                 component="p"
-                sx={{
-                  width: {
-                    xs: '12rem', sm: '14.5rem', md: '14.5rem', lg: '14.5rem', xl: '14.5rem',
-                  },
-                  color: '#6D6E76',
-                }}
+                sx={styles.categoriesSectionP4}
               >
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
               </Typography>

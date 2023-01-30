@@ -3,17 +3,11 @@ import { Box, Grid } from '@mui/material';
 
 import { FeaturedPost } from './FeaturedPost';
 import { AllPosts } from './AllPosts';
+import { styles } from './styles';
 
 export const PostsSection: FC = () => (
   <Box
-    sx={{
-      width: '100%',
-      height: '90vh',
-      p: {
-        xs: '0 1rem', sm: '0 1rem', md: '0 5rem', lg: '0 5rem', xl: '0 5rem',
-      },
-      mb: '8rem',
-    }}
+    sx={styles.postSectionMain}
   >
     <Grid container>
       <Grid

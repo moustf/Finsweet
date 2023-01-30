@@ -11,7 +11,9 @@ export const FeaturedInSection: FC = () => (
   <Box
     sx={{
       width: '100%',
-      p: '5rem',
+      p: {
+        xs: '0 1rem', sm: '0 1rem', md: '0 5rem', lg: '0 5rem', xl: '0 5rem',
+      },
       display: 'flex',
       flexDirection: 'row',
       justifyContent: {
@@ -24,17 +26,11 @@ export const FeaturedInSection: FC = () => (
       alignItems: 'center',
       flexWrap: 'wrap',
       gap: '2rem',
-      transform: {
-        xs: 'translateY(225rem)',
-        sm: 'translateY(174rem)',
-        md: 'translateY(135rem)',
-        lg: 'translateY(35rem)',
-        xl: 'translateY(18rem)',
-      },
       '& .featured-logo': {
         width: '8.5rem',
         height: '2rem',
       },
+      mb: '8rem',
     }}
   >
     <Box

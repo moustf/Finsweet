@@ -2,12 +2,15 @@ import {
   memo, FC, Dispatch, SetStateAction,
 } from 'react';
 import { Box, Typography } from '@mui/material';
+import { useNavigate } from 'react-router';
 import {
   Facebook as FacebookIcon,
   Twitter as TwitterIcon,
   Instagram as InstagramIcon,
   LinkedIn as LinkedInIcon,
 } from '@mui/icons-material';
+
+import { styles } from './styles';
 
 export const AuthorBox: FC<{
   index: number,
@@ -21,70 +24,43 @@ export const AuthorBox: FC<{
   setIndex,
   img,
   name,
-}) => (
-  <Box
-    sx={{
-      width: '23rem',
-      height: '24rem',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      gap: '1.2rem',
-      mb: '2rem',
-      bgcolor: index === arrange ? 'primary.light' : 'secondary.light',
-      cursor: 'pointer',
-    }}
-    onClick={() => setIndex(arrange)}
-  >
-    <img src={img} alt="author one" className="author author1" />
-    <Typography
-      variant="h3"
-      component="h3"
-      sx={{
-        width: '12rem',
-        fontFamily: "'Sen', sans-serif",
-        fontWight: 700,
-        fontSize: '1.6rem',
-        letterSpacing: '-1px',
-        textAlign: 'center',
-        color: 'secondary.main',
-      }}
-    >
-      {name}
-    </Typography>
-    <Typography
-      variant="body2"
-      component="p"
-      sx={{
-        width: '15rem',
-        fontSize: '0.9rem',
-        color: '#6D6E76',
-        fontFamily: "'Inter', sans-serif",
-        textAlign: 'center',
-      }}
-    >
-      Content Writer @Company
-    </Typography>
+}) => {
+  const navigate = useNavigate();
+
+  return (
     <Box
       sx={{
-        width: '100%',
-        height: '1rem',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        gap: '1rem',
-        '& .author-socials': {
-          width: '1rem',
-          height: '1.1rem',
-          color: 'secondary.main',
-        },
+        bgcolor: index === arrange ? 'primary.light' : 'secondary.light',
+        ...styles.authorBoxMain,
+      }}
+      onClick={() => {
+        setIndex(arrange);
+        navigate('/author');
       }}
     >
-      <FacebookIcon className="author-socials" />
-      <TwitterIcon className="author-socials" />
-      <InstagramIcon className="author-socials" />
-      <LinkedInIcon className="author-socials" />
+      <img src={img} alt="author one" className="author author1" />
+      <Typography
+        variant="h3"
+        component="h3"
+        sx={styles.authorBoxH3}
+      >
+        {name}
+      </Typography>
+      <Typography
+        variant="body2"
+        component="p"
+        sx={styles.authorBoxP}
+      >
+        Content Writer @Company
+      </Typography>
+      <Box
+        sx={styles.authorBoxInnerBox}
+      >
+        <FacebookIcon className="author-socials" />
+        <TwitterIcon className="author-socials" />
+        <InstagramIcon className="author-socials" />
+        <LinkedInIcon className="author-socials" />
+      </Box>
     </Box>
-  </Box>
-));
+  );
+});
