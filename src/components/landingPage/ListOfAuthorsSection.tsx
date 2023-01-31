@@ -2,10 +2,6 @@ import { Box, Typography } from '@mui/material';
 import { FC, useState } from 'react';
 
 import { AuthorBox } from '../AuthorBox';
-import Author1 from '../../assets/author1.svg';
-import Author2 from '../../assets/author2.svg';
-import Author3 from '../../assets/author3.svg';
-import Author4 from '../../assets/author4.svg';
 import { styles } from './styles';
 
 export const ListOfAuthorsSection: FC = () => {
@@ -27,28 +23,28 @@ export const ListOfAuthorsSection: FC = () => {
           index={index}
           arrange={1}
           setIndex={setIndex}
-          img={Author1}
+          img="https://i.ibb.co/5MCDDwD/author1.png"
           name="Floyd Miles"
         />
         <AuthorBox
           index={index}
           arrange={2}
           setIndex={setIndex}
-          img={Author2}
+          img="https://i.ibb.co/pKWCbCH/author2.png"
           name="Dianne Russell"
         />
         <AuthorBox
           index={index}
           arrange={3}
           setIndex={setIndex}
-          img={Author3}
+          img="https://i.ibb.co/hZV0Vf0/author3.png"
           name="Jenny Wilson"
         />
         <AuthorBox
           index={index}
           arrange={4}
           setIndex={setIndex}
-          img={Author4}
+          img="https://i.ibb.co/TbN5WWY/author4.png"
           name="Leslie Alexander"
         />
       </Box>

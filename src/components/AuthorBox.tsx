@@ -38,7 +38,7 @@ export const AuthorBox: FC<{
         navigate('/author');
       }}
     >
-      <img src={img} alt="author one" className="author author1" />
+      <img src={img} alt={name} className="author author1" />
       <Typography
         variant="h3"
         component="h3"

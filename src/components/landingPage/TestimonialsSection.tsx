@@ -7,7 +7,6 @@ import {
   ArrowForward as ArrowForwardIcon,
 } from '@mui/icons-material';
 
-import ProfilePicture from '../../assets/profile-pic.svg';
 import { styles } from './styles';
 
 export const TestimonialsSection: FC = () => (
@@ -90,7 +89,7 @@ export const TestimonialsSection: FC = () => (
             <Box
               sx={styles.testimonialsPersonalCardInner}
             >
-              <img src={ProfilePicture} alt="profile" className="profile-pic" />
+              <img src="https://i.ibb.co/XZ5Hdrz/profile-pic.png" alt="profile" className="profile-pic" />
               <Box
                 sx={styles.testimonialsPersonalInfo}
               >

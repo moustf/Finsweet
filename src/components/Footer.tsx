@@ -1,7 +1,6 @@
 import { FC } from 'react';
 import { Box, Button, Typography } from '@mui/material';
 
-import Logo from '../assets/Logo.png';
 import { Subscription } from './Subscription';
 import { FooterSocial } from './FooterSocial';
 import { styles } from './styles';
@@ -19,7 +18,7 @@ export const Footer: FC = () => (
           width: '8.75rem',
           height: '1.8rem',
         }}
-        src={Logo}
+        src="https://i.ibb.co/NsGvbwR/Logo.png"
         alt="logo"
       />
       <Box

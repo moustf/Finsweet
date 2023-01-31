@@ -3,7 +3,6 @@ import {
   Box, Typography, Button, Divider, Grid,
 } from '@mui/material';
 
-import FeaturedPostPicture from '../../assets/all-posts-featured-picture.svg';
 import { styles } from './styles';
 
 export const FeaturedPostSection: FC = () => (
@@ -99,7 +98,7 @@ export const FeaturedPostSection: FC = () => (
         sx={styles.featuredPostImageGrid}
       >
         <img
-          src={FeaturedPostPicture}
+          src="https://i.ibb.co/C5BxwYW/all-posts-featured-pic.png"
           alt="featured post"
           className="featured-post-pic"
         />

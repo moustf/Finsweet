@@ -7,7 +7,6 @@ import {
   LinkedIn as LinkedInIcon,
 } from '@mui/icons-material';
 
-import AuthorPic from '../../assets/author-pic.svg';
 import { styles } from './styles';
 
 export const IntroductionSection: FC = () => (
@@ -19,7 +18,7 @@ export const IntroductionSection: FC = () => (
       component="section"
       sx={styles.introSectionImageBox}
     >
-      <img src={AuthorPic} alt="author" className="author-pic" />
+      <img src="https://i.ibb.co/xg0dQ6d/author-pic.png" alt="author" className="author-pic" />
       <Box
         sx={styles.introSectionTextBox}
       >

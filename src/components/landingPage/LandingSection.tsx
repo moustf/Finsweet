@@ -3,7 +3,6 @@ import {
 } from '@mui/material';
 import { FC } from 'react';
 
-import LandingCover from '../../assets/LandingCover.png';
 import { styles } from './styles';
 
 export const LandingSection: FC = () => (
@@ -11,7 +10,7 @@ export const LandingSection: FC = () => (
     component="section"
     sx={{
       ...styles.landingSectionMain,
-      backgroundImage: `url(${LandingCover})`,
+      backgroundImage: 'url(https://i.ibb.co/RpVntCr/Landing-Cover.png',
     }}
   >
     <Typography

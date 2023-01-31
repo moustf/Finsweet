@@ -1,8 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import { FC } from 'react';
 
-import ProfilePicture from '../../assets/profile-pic.svg';
-import RocketIcon from '../../assets/rocket.png';
 import { styles } from './styles';
 
 export const InfoAndTitleSection: FC = () => (
@@ -14,7 +12,7 @@ export const InfoAndTitleSection: FC = () => (
       <Box
         sx={styles.infoAndTitleBox1}
       >
-        <img src={ProfilePicture} alt="profile" className="profile-pic" />
+        <img src="https://i.ibb.co/C5BxwYW/all-posts-featured-pic.png" alt="profile" className="profile-pic" />
         <Box
           sx={styles.infoAndTitleBox2}
         >
@@ -44,7 +42,7 @@ export const InfoAndTitleSection: FC = () => (
       <Box
         sx={styles.infoAndTitleBox3}
       >
-        <img src={RocketIcon} alt="rocket icon" className="single-post__rocket-icon" />
+        <img src="https://i.ibb.co/C9np4rh/rocket.png" alt="rocket icon" className="single-post__rocket-icon" />
         <Typography
           variant="h4"
           component="h4"

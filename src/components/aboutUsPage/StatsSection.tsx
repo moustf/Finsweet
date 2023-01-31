@@ -1,7 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import { FC } from 'react';
 
-import StatsPic from '../../assets/stats-pic.png';
 import { styles } from './styles';
 
 const StatsBox: FC<{ number: string, text: string }> = ({ number, text }) => (
@@ -29,7 +28,7 @@ export const StatsSection: FC = () => (
   <Box
     component="section"
     sx={{
-      backgroundImage: `url(${StatsPic})`,
+      backgroundImage: 'url(https://i.ibb.co/SsVdN3g/stats-pic-wide.png)',
       ...styles.statsSectionMain,
     }}
   >

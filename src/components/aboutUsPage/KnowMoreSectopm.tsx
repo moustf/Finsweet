@@ -1,7 +1,6 @@
 import { Box, Grid, Typography } from '@mui/material';
 import { FC } from 'react';
 
-import KnowMorePic from '../../assets/know-more-pic.svg';
 import { styles } from './styles';
 
 export const KnowMoreSection: FC = () => (
@@ -60,7 +59,7 @@ export const KnowMoreSection: FC = () => (
       >
         <Box
           sx={{
-            backgroundImage: `url(${KnowMorePic})`,
+            backgroundImage: 'url(https://i.ibb.co/d6DfLs8/know-more-pic.png)',
             ...styles.knowMoreImageBox,
           }}
         >
