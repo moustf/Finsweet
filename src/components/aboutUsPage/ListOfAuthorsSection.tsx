@@ -2,14 +2,6 @@ import { FC, useState } from 'react';
 import { Box, Typography } from '@mui/material';
 
 import { AuthorBox } from '../AuthorBox';
-import Author1 from '../../assets/author1.svg';
-import Author2 from '../../assets/author2.svg';
-import Author3 from '../../assets/author3.svg';
-import Author4 from '../../assets/author4.svg';
-import Author5 from '../../assets/author5.svg';
-import Author6 from '../../assets/author6.svg';
-import Author7 from '../../assets/author7.svg';
-import Author8 from '../../assets/author8.svg';
 import { styles } from './styles';
 
 export const ListOfAuthorsSection: FC = () => {
@@ -32,56 +24,56 @@ export const ListOfAuthorsSection: FC = () => {
           index={index}
           arrange={++arrange}
           setIndex={setIndex}
-          img={Author1}
+          img="https://i.ibb.co/5MCDDwD/author1.png"
           name="Floyd Miles"
         />
         <AuthorBox
           index={index}
           arrange={++arrange}
           setIndex={setIndex}
-          img={Author2}
+          img="https://i.ibb.co/pKWCbCH/author2.png"
           name="Dianne Russell"
         />
         <AuthorBox
           index={index}
           arrange={++arrange}
           setIndex={setIndex}
-          img={Author3}
+          img="https://i.ibb.co/hZV0Vf0/author3.png"
           name="Jenny Wilson"
         />
         <AuthorBox
           index={index}
           arrange={++arrange}
           setIndex={setIndex}
-          img={Author4}
+          img="https://i.ibb.co/TbN5WWY/author4.png"
           name="Leslie Alexander"
         />
         <AuthorBox
           index={index}
           arrange={++arrange}
           setIndex={setIndex}
-          img={Author5}
+          img="https://i.ibb.co/NycSzZJ/author5.png"
           name="Guy Hawkins"
         />
         <AuthorBox
           index={index}
           arrange={++arrange}
           setIndex={setIndex}
-          img={Author6}
+          img="https://i.ibb.co/BjLpnNz/author6.png"
           name="Eleanor Pena"
         />
         <AuthorBox
           index={index}
           arrange={++arrange}
           setIndex={setIndex}
-          img={Author7}
+          img="https://i.ibb.co/3kYsm0C/author7.png"
           name="Robert Fox"
         />
         <AuthorBox
           index={index}
           arrange={++arrange}
           setIndex={setIndex}
-          img={Author8}
+          img="https://i.ibb.co/dQbVCMH/author8.png"
           name="Jacob Jones"
         />
       </Box>

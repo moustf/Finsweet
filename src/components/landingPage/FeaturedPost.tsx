@@ -3,7 +3,6 @@ import {
   Box, Card, Typography, Button, Divider,
 } from '@mui/material';
 
-import FeaturedPostImage from '../../assets/featured-post-image.png';
 import { styles } from './styles';
 
 export const FeaturedPost: FC = () => (
@@ -21,7 +20,7 @@ export const FeaturedPost: FC = () => (
       sx={styles.featuredPostCard}
     >
       <img
-        src={FeaturedPostImage}
+        src="https://i.ibb.co/bRk7JNm/featured-post-image.png"
         alt="featured post"
         className="postImage"
       />

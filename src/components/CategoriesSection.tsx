@@ -2,10 +2,6 @@ import { FC, useState } from 'react';
 import { Grid, Box, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
-import BusinessIcon from '../assets/business.png';
-import CyborgIcon from '../assets/cyborg.png';
-import EconomyIcon from '../assets/economy.png';
-import RocketIcon from '../assets/rocket.png';
 import { styles } from './styles';
 
 export const CategoriesSection: FC = () => {
@@ -50,7 +46,7 @@ export const CategoriesSection: FC = () => {
               }}
             >
               <Box sx={styles.categoriesSectionBox3}>
-                <img src={BusinessIcon} alt="business icon" className="category__image" />
+                <img src="https://i.ibb.co/GcwTtQt/business.png" alt="business icon" className="category__image" />
               </Box>
               <Typography
                 variant="h3"
@@ -88,7 +84,7 @@ export const CategoriesSection: FC = () => {
               }}
             >
               <Box sx={styles.categoriesSectionBox5}>
-                <img src={RocketIcon} alt="business icon" className="category__image" />
+                <img src="https://i.ibb.co/C9np4rh/rocket.png" alt="business icon" className="category__image" />
               </Box>
               <Typography
                 variant="h3"
@@ -126,7 +122,7 @@ export const CategoriesSection: FC = () => {
               }}
             >
               <Box sx={styles.categoriesSectionBox7}>
-                <img src={EconomyIcon} alt="business icon" className="category__image" />
+                <img src="https://i.ibb.co/cyzZqKr/economy.png" alt="business icon" className="category__image" />
               </Box>
               <Typography
                 variant="h3"
@@ -164,7 +160,7 @@ export const CategoriesSection: FC = () => {
               }}
             >
               <Box sx={styles.categoriesSectionBox9}>
-                <img src={CyborgIcon} alt="business icon" className="category__image" />
+                <img src="https://i.ibb.co/3WW3CM6/cyborg.png" alt="business icon" className="category__image" />
               </Box>
               <Typography
                 variant="h3"

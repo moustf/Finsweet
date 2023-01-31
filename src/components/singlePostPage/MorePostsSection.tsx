@@ -3,9 +3,6 @@ import {
 } from '@mui/material';
 import { FC } from 'react';
 
-import Post1 from '../../assets/post1.svg';
-import Post2 from '../../assets/post2.svg';
-import Post3 from '../../assets/post3.svg';
 import { styles } from './styles';
 
 const PostCard: FC<{ img: string }> = ({ img }) => (
@@ -92,7 +89,7 @@ export const MorePostsSection: FC = () => (
           lg={4}
           xl={4}
         >
-          <PostCard img={Post1} />
+          <PostCard img="https://i.ibb.co/y5ZBNpd/post1.png" />
         </Grid>
         <Grid
           item
@@ -102,7 +99,7 @@ export const MorePostsSection: FC = () => (
           lg={4}
           xl={4}
         >
-          <PostCard img={Post2} />
+          <PostCard img="https://i.ibb.co/fGp4SBc/post2.png" />
         </Grid>
         <Grid
           item
@@ -112,7 +109,7 @@ export const MorePostsSection: FC = () => (
           lg={4}
           xl={4}
         >
-          <PostCard img={Post3} />
+          <PostCard img="https://i.ibb.co/QJQ33pH/post3.png" />
         </Grid>
       </Grid>
     </Box>

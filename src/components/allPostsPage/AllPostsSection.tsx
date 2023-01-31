@@ -5,40 +5,36 @@ import {
 import { FC } from 'react';
 import { v4 as uuid } from 'uuid';
 
-import Post1 from '../../assets/post1.svg';
-import Post2 from '../../assets/post2.svg';
-import Post3 from '../../assets/post3.svg';
-import Post4 from '../../assets/post4.svg';
 import { PostCard } from '../PostCard';
 import { styles } from './styles';
 
 const cards = [
   {
-    img: Post1,
+    img: 'https://i.ibb.co/y5ZBNpd/post1.png',
     title: 'Startup',
     heading: 'Design tips for designers that cover everything you need',
     text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
   },
   {
-    img: Post2,
+    img: 'https://i.ibb.co/fGp4SBc/post2.png',
     title: 'Business',
     heading: 'How to build rapport with your web design clients',
     text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
   },
   {
-    img: Post3,
+    img: 'https://i.ibb.co/QJQ33pH/post3.png',
     title: 'Startup',
     heading: 'Logo design trends to avoid in 2022',
     text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
   },
   {
-    img: Post4,
+    img: 'https://i.ibb.co/yYZ1Q5Q/post4.png',
     title: 'Technology',
     heading: '8 Figma design systems you can download for free today',
     text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
   },
   {
-    img: Post1,
+    img: 'https://i.ibb.co/y5ZBNpd/post1.png',
     title: 'Economy',
     heading: 'Font sizes in UI design: The complete guide to follow',
     text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',

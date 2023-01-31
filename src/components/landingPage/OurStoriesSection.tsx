@@ -3,7 +3,6 @@ import {
   Box, Grid, Typography, Button,
 } from '@mui/material';
 
-import OurStoryImage from '../../assets/our-story-section.svg';
 import { styles } from './styles';
 
 export const OurStoriesSection: FC = () => (
@@ -22,7 +21,7 @@ export const OurStoriesSection: FC = () => (
         xl={8}
       >
         <img
-          src={OurStoryImage}
+          src="https://i.ibb.co/D4bLJD0/ourt-story-section.png"
           alt="our story"
           style={{
             width: '100%',

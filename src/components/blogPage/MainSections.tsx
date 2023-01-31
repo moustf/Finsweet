@@ -4,12 +4,7 @@ import { Box, Grid, Typography } from '@mui/material';
 
 import { PostCard } from '../PostCard';
 import { CategoryCard } from './CategoryCard';
-import Post from '../../assets/post1.svg';
 
-import RocketIcon from '../../assets/rocket_cat.svg';
-import BusinessIcon from '../../assets/bus_cat.svg';
-import EconomyIcon from '../../assets/econ_cat.svg';
-import CyborgIcon from '../../assets/cyborg_cat.svg';
 import { TagCircle } from './TagCircle';
 import { styles } from './styles';
 
@@ -38,28 +33,28 @@ export const MainSections: FC = () => {
           >
             <PostCard
               page="category"
-              img={Post}
+              img="https://i.ibb.co/y5ZBNpd/post1.png"
               title="Business"
               heading="Top 6 free website mockup tools 2022"
               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
             />
             <PostCard
               page="category"
-              img={Post}
+              img="https://i.ibb.co/y5ZBNpd/post1.png"
               title="Business"
               heading="Step-by-step guide to choosing great font pairs"
               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
             />
             <PostCard
               page="category"
-              img={Post}
+              img="https://i.ibb.co/y5ZBNpd/post1.png"
               title="Business"
               heading="Ten free foogle fonts that you should use"
               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
             />
             <PostCard
               page="category"
-              img={Post}
+              img="https://i.ibb.co/y5ZBNpd/post1.png"
               title="Business"
               heading="What did I learn from doing 50+ design sprints?"
               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
@@ -91,28 +86,28 @@ export const MainSections: FC = () => {
                 index={index}
                 arrange={1}
                 setIndex={setIndex}
-                img={RocketIcon}
+                img="https://i.ibb.co/269VL4z/rocket-cat.png"
                 title="Startup"
               />
               <CategoryCard
                 index={index}
                 arrange={2}
                 setIndex={setIndex}
-                img={BusinessIcon}
+                img="https://i.ibb.co/kGsC9dV/bus-cat.png"
                 title="Business"
               />
               <CategoryCard
                 index={index}
                 arrange={3}
                 setIndex={setIndex}
-                img={EconomyIcon}
+                img="https://i.ibb.co/FzDN1g6/econ-cat.png"
                 title="Economy"
               />
               <CategoryCard
                 index={index}
                 arrange={4}
                 setIndex={setIndex}
-                img={CyborgIcon}
+                img="https://i.ibb.co/T8hVVM7/cyborg-cat.png"
                 title="Technology"
               />
             </Box>

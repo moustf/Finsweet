@@ -1,7 +1,6 @@
 import { Box, Grid, Typography } from '@mui/material';
 import { FC } from 'react';
 
-import WhyWeStartedPic from '../../assets/why-we-started-pic.svg';
 import { styles } from './styles';
 
 export const WhyWeStartedSection: FC = () => (
@@ -23,7 +22,7 @@ export const WhyWeStartedSection: FC = () => (
       >
         <Box
           sx={{
-            backgroundImage: `url(${WhyWeStartedPic})`,
+            backgroundImage: 'url(https://i.ibb.co/3Wbq1W0/why-we-started-pic.png)',
             ...styles.whyWeStartedImageBox,
           }}
         >

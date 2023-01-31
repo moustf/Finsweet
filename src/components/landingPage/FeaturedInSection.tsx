@@ -1,12 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import { FC } from 'react';
 
-import Logo1 from '../../assets/Logo1.svg';
-import Logo2 from '../../assets/Logo2.svg';
-import Logo3 from '../../assets/Logo3.svg';
-import Logo4 from '../../assets/Logo4.svg';
-import Logo5 from '../../assets/Logo5.svg';
-
 export const FeaturedInSection: FC = () => (
   <Box
     sx={{
@@ -69,10 +63,10 @@ export const FeaturedInSection: FC = () => (
         Featured in
       </Typography>
     </Box>
-    <img src={Logo1} alt="logo1" className="featured-logo" />
-    <img src={Logo2} alt="logo2" className="featured-logo" />
-    <img src={Logo3} alt="logo3" className="featured-logo" />
-    <img src={Logo4} alt="logo4" className="featured-logo" />
-    <img src={Logo5} alt="logo5" className="featured-logo" />
+    <img src="https://i.ibb.co/M8P4tPP/logo1.png" alt="logo1" className="featured-logo" />
+    <img src="https://i.ibb.co/jMSDLdm/logo2.png" alt="logo2" className="featured-logo" />
+    <img src="https://i.ibb.co/ZxkCpXS/logo3.png" alt="logo3" className="featured-logo" />
+    <img src="https://i.ibb.co/Z8Hfgkt/logo4.png" alt="logo4" className="featured-logo" />
+    <img src="https://i.ibb.co/6y8T2jW/logo5.png" alt="logo5" className="featured-logo" />
   </Box>
 );

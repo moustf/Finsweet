@@ -3,7 +3,6 @@ import { FC } from 'react';
 import { v4 as uuid } from 'uuid';
 import { useNavigate } from 'react-router';
 
-import PostPic from '../../assets/post-section-pic.png';
 import { styles } from './styles';
 
 const Heading: FC = () => (
@@ -38,7 +37,7 @@ export const PostSection: FC = () => {
       sx={styles.postSectionMain}
       onClick={() => navigate('/post')}
     >
-      <img src={PostPic} alt="post" className="single-post__pic" />
+      <img src="https://i.ibb.co/n7RmxGW/post-section-pic.png" alt="post" className="single-post__pic" />
       <Box
         sx={styles.postSectionBox1}
       >

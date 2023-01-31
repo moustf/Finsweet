@@ -2,7 +2,6 @@ import { FC } from 'react';
 import {
   Box, Container, Select, MenuItem, TextareaAutosize, Button,
 } from '@mui/material';
-import Swal from 'sweetalert2';
 import {
   useForm, SubmitHandler, FieldValue, Controller,
 } from 'react-hook-form';
@@ -20,15 +19,6 @@ export const ContractsForm: FC = () => {
         resolve(console.log(data));
       }, 500);
     }),
-    onSuccess: () => {
-      Swal.fire({
-        position: 'bottom-end',
-        icon: 'success',
-        title: 'Logged in successfully!!',
-        showConfirmButton: false,
-        timer: 1500,
-      });
-    },
   });
 
   const { control, handleSubmit } = useForm({
