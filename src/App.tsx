@@ -1,19 +1,21 @@
-import { FC } from 'react';
+import { FC, lazy, Suspense } from 'react';
 import { ThemeProvider } from '@mui/material';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack//react-query-devtools';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
+import { Spinner } from './components/Spinner';
 import { theme } from './theme';
-import { LandingPage } from './pages/LandingPage';
-import { AllPostsPage } from './pages/AllPostsPage';
-import { SinglePostPage } from './pages/SinglePostPage';
-import { AboutPage } from './pages/AboutUsPage';
-import { BlogPage } from './pages/BlogPage';
-import { AuthorPage } from './pages/AuthorPage';
-import { ContactUsPage } from './pages/ContactUsPage';
-import { PrivacyPolicyPage } from './pages/PrivacyPolicy';
 import './App.css';
+
+const LandingPage = lazy(() => import('./pages/LandingPage'));
+const AllPostsPage = lazy(() => import('./pages/AllPostsPage'));
+const SinglePostPage = lazy(() => import('./pages/SinglePostPage'));
+const AboutPage = lazy(() => import('./pages/AboutUsPage'));
+const BlogPage = lazy(() => import('./pages/BlogPage'));
+const AuthorPage = lazy(() => import('./pages/AuthorPage'));
+const ContactUsPage = lazy(() => import('./pages/ContactUsPage'));
+const PrivacyPolicyPage = lazy(() => import('./pages/PrivacyPolicy'));
 
 export const App: FC = () => {
   const queryClient = new QueryClient();
@@ -56,9 +58,11 @@ export const App: FC = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider theme={theme}>
-        <div className="App">
-          <RouterProvider router={router} />
-        </div>
+        <Suspense fallback={<Spinner />}>
+          <div className="App">
+            <RouterProvider router={router} />
+          </div>
+        </Suspense>
       </ThemeProvider>
       <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>

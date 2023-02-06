@@ -7,7 +7,7 @@ import { ContactsCard } from '../components/contactUsPage/ContactsCard';
 import { ContractsForm } from '../components/contactUsPage/ContactsForm';
 import { Footer } from '../components/Footer';
 
-export const ContactUsPage: FC = () => (
+const ContactUsPage: FC = () => (
   <Box
     component="main"
   >
@@ -18,3 +18,5 @@ export const ContactUsPage: FC = () => (
     <Footer />
   </Box>
 );
+
+export default ContactUsPage;

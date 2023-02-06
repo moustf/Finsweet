@@ -13,7 +13,7 @@ import { TestimonialsSection } from '../components/landingPage/TestimonialsSecti
 import { JoinOurTeamSection } from '../components/JoinOurTeamSection';
 import { Footer } from '../components/Footer';
 
-export const LandingPage: FC = () => (
+const LandingPage: FC = () => (
   <Box
     component="main"
   >
@@ -31,3 +31,5 @@ export const LandingPage: FC = () => (
     <Footer />
   </Box>
 );
+
+export default LandingPage;

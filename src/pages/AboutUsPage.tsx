@@ -9,7 +9,7 @@ import { ListOfAuthorsSection } from '../components/aboutUsPage/ListOfAuthorsSec
 import { JoinOurTeamSection } from '../components/JoinOurTeamSection';
 import { Footer } from '../components/Footer';
 
-export const AboutPage: FC = () => (
+const AboutPage: FC = () => (
   <Box component="section">
     <CssBaseline />
     <Header />
@@ -21,3 +21,5 @@ export const AboutPage: FC = () => (
     <Footer />
   </Box>
 );
+
+export default AboutPage;
