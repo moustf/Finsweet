@@ -5,7 +5,7 @@ import { PostsSection } from '../components/authorProfile/PostsSection';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 
-export const AuthorPage: FC = () => {
+const AuthorPage: FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -21,3 +21,5 @@ export const AuthorPage: FC = () => {
     </Box>
   );
 };
+
+export default AuthorPage;

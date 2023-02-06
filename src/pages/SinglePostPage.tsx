@@ -8,7 +8,7 @@ import { MorePostsSection } from '../components/singlePostPage/MorePostsSection'
 import { JoinOurTeamSection } from '../components/JoinOurTeamSection';
 import { Footer } from '../components/Footer';
 
-export const SinglePostPage: FC = () => {
+const SinglePostPage: FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -24,3 +24,5 @@ export const SinglePostPage: FC = () => {
     </Box>
   );
 };
+
+export default SinglePostPage;

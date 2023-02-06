@@ -8,7 +8,7 @@ import { CategoriesSection } from '../components/CategoriesSection';
 import { JoinOurTeamSection } from '../components/JoinOurTeamSection';
 import { Footer } from '../components/Footer';
 
-export const AllPostsPage: FC = () => (
+const AllPostsPage: FC = () => (
   <Box
     component="main"
   >
@@ -20,3 +20,5 @@ export const AllPostsPage: FC = () => (
     <Footer />
   </Box>
 );
+
+export default AllPostsPage;

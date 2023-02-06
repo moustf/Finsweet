@@ -6,7 +6,7 @@ import { CategorySection } from '../components/blogPage/CategorySection';
 import { MainSections } from '../components/blogPage/MainSections';
 import { Footer } from '../components/Footer';
 
-export const BlogPage: FC = () => {
+const BlogPage: FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -22,3 +22,5 @@ export const BlogPage: FC = () => {
     </Box>
   );
 };
+
+export default BlogPage;

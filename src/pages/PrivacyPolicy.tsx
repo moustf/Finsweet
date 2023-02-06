@@ -5,7 +5,7 @@ import { HeadingSection } from '../components/privacyPolicy/HeadingSection';
 import { PrivacyTermsSection } from '../components/privacyPolicy/PrivacyTermsSection';
 import { Footer } from '../components/Footer';
 
-export const PrivacyPolicyPage: FC = () => (
+const PrivacyPolicyPage: FC = () => (
   <Box
     component="main"
   >
@@ -15,3 +15,5 @@ export const PrivacyPolicyPage: FC = () => (
     <Footer />
   </Box>
 );
+
+export default PrivacyPolicyPage;

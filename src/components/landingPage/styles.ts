@@ -617,6 +617,10 @@ export const styles = {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
+    '& .profile-pic': {
+      width: '20%',
+      height: '80%',
+    },
   },
   testimonialsPersonalInfo: {
     width: '70%',
